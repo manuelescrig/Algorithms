@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+/*
+
+*/
+
+public class StackWith2Queues {
+
+
+  public static void main(String args[]) {
+    int arrA[] = { 1, 2, -3, -4, 2, 7, -2, 3 };
+    ArrayMaximumSubArray i = new ArrayMaximumSubArray();
+    System.out.println("Maximum subarray is  " + i.kandane(arrA));
+    int arrB[] = { -2, -3, -4, -2, -7, -2, -3,-11 };
+    System.out.println("Maximum Subarray when all elements are negative : " + i.KandaneModify(arrB));
+  }
+}
