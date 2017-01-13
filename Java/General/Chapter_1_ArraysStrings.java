@@ -184,24 +184,127 @@ class Chapter_1_ArraysStrings {
 
   /*
   6.Binary search in a sorted rotated array
+  input = 1,2,3,4,5,6,7,8,9 (2)
+          ^     ^
+                ^
   */
-  public static void method6(String input) {
+  public static boolean binarySearch(int[] input, int target) {
 
+    int left = 0;
+    int right = input.length-1;
+    while ((right - left) > 1) {
+      int mid = (right - left) / 2;
+      mid += left;
+      if (input[mid] == target) return true;
+      if (input[mid] > target) {
+        right = mid;
+      } else {
+        left = mid;
+      }
+    }
+
+    return false;
+  }
+
+  /*                    0 1 2 3 4 5 6 7 8
+  sortedRotatedArray = {4,5,6,7,8,9,1,2,3} (4)
+                        ^ ^
+                          ^
+  */
+  public static boolean binarySearchRotated(int[] input, int target) {
+    int left = 0;
+    int right = input.length-1;
+    int mid = (right - left) / 2;
+
+    while ( left < right ) {
+
+      if (input[mid] == target) return true;
+      if (input[mid] > target && input[left] <= target) {
+        // Left Side
+        right = mid;
+        mid = (right - left) / 2;
+      } else {
+        // Right Side
+        left = mid;
+        mid = (right - left) / 2;
+        if (mid == 0) mid++;
+        mid += left;
+      }
+    }
+    return false;
   }
 
   /*
   ­7.Max profit stock problem
+  The cost of a stock on each day is given in an array, find the max profit
+  that you can make by buying and selling in those days. For example, if the
+  given array is {100, 180, 260, 310, 40, 535, 695}, the maximum profit can
+  earned by buying on day 0, selling on day 3. Again buy on day 4 and sell
+  on day 6. If the given array of prices is sorted in decreasing order, then
+  profit cannot be earned at all.
+     0    1    2    3   4    5    6
+  {100, 180, 260, 310, 40, 535, 695}
+     0   80  160  210   0  495  655
+
+
   */
-  public static void method7(String input) {
+  public static void maxProfit(int[] input) {
+    if (input == null) return;
+    if (input.length < 1) return;
+
+    int[] profits = new int[input.length];
+    profits[0] = 0;
+    for (int i = 1; i < input.length; i++) {
+      if (input[i] > input[i-1]) {
+        int diff = input[i] - input[i-1];
+        profits[i] = profits[i-1] + diff;
+      } else {
+        profits[i] = 0;
+      }
+    }
+
+    int prev = profits[0];
+    System.out.print("0,");
+    for (int i=1; i<profits.length; i++) {
+      if (prev < profits[i]) {
+        prev = profits[i];
+      } else {
+        System.out.println(i-1 + "|");
+        System.out.print(i+",");
+        prev = profits[i];
+      }
+    }
+    System.out.println(input.length-1 + "|");
 
   }
+
 
   /*
   ­8.Matrix multiplication
-  */
-  public static void method8(String input) {
+  return c = a * b
+    1 2 3  * 10 20 30 =  10  40  90
+    4 5 6    40 50 60   160 250 360
+    7 8 9    70 80 90   490 640 810
 
+    i = 0
+    j = 0
+    k = 2
+
+  */
+    public static double[][] multiply(double[][] a, double[][] b) {
+      int m1 = a.length;
+      int n1 = a[0].length;
+      int m2 = b.length;
+      int n2 = b[0].length;
+      if (n1 != m2) throw new RuntimeException("Illegal matrix dimensions.");
+      double[][] c = new double[m1][n2];
+      for (int i = 0; i < m1; i++)
+          for (int j = 0; j < n2; j++)
+              for (int k = 0; k < n1; k++)
+                  c[i][j] += a[i][k] * b[k][j];
+      return c;
   }
+
 
   /*
   ­9.Find all duplicates in an array
@@ -211,7 +314,7 @@ class Chapter_1_ArraysStrings {
   }
 
   /*
-  ­10.Print a matrix in a spiral manner
+  ­10.Print a matrix in a spigral manner
   */
   public static void method10(String input) {
 
@@ -326,6 +429,21 @@ class Chapter_1_ArraysStrings {
     quickSort(unsorted);
     for (int i : unsorted) System.out.print(i + " ");
     System.out.println("\n");
+
+    System.out.println("6.Binary search in a sorted array");
+    int[] sortedArray = {1,2,3,4,5,6,7,8,9};
+    System.out.println(binarySearch(sortedArray, 2));
+    System.out.println("");
+
+    System.out.println("6.Binary search in a sorted rotated array");
+    int[] sortedRotatedArray = {4,5,6,7,8,9,1,2,3};
+    System.out.println(binarySearchRotated(sortedRotatedArray, 10));
+    System.out.println("");
+
+    System.out.println("7.Max Profit");
+    int[] stocks = {100, 180, 260, 310, 40, 535, 695};
+    maxProfit(stocks);
+    System.out.println("");
 
     System.out.println("11.Given two strings, write a function that returns the longest common substring.");
     String a = "ABAB";
