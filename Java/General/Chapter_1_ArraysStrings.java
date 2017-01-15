@@ -322,22 +322,55 @@ class Chapter_1_ArraysStrings {
   }
 
   /*
-  ­10.Print a matrix in a spigral manner
+  ­10.Print a matrix in a spiral manner
+
+  {{ 1,  2,  3,  4},
+   { 5,  6,  7,  8},
+   { 9, 10, 11, 12},
+   {13, 14, 15, 16}};
+   00,01,02,03,13,23,33,32,31,30,20,10,11,12,22,21.
+
   {{1, 2, 3},
    {4, 5, 6},
    {7, 8, 9}};
-   00,
-   01,
-   02,
-   12,
-   22,
-   21,
-   20,
-   10,
-   11
+   00,01,02,12,22,21,20,10,11
   */
   public static void printMatrixSpiral(int[][] matrix) {
+    // if (matrix == null) return;
 
+    int rowMin = 0;
+    int rowMax = matrix.length;
+    int colMin = 0;
+    int colMax = matrix[0].length;
+
+    int i = colMin;
+    int j = colMax;
+    while (rowMin < rowMax && colMin < colMax) {
+      i = colMin; j = colMax;
+      while (i < j) {
+        System.out.print(matrix[rowMin][i]+ " ");
+        i++;
+      }
+      rowMin++;
+      i = rowMin; j = rowMax;
+      while (i < j) {
+        System.out.print(matrix[i][colMax-1]+ " ");
+        i++;
+      }
+      colMax--;
+      i = colMax-1; j = colMin;
+      while (i >= j) {
+        System.out.print(matrix[rowMax-1][i]+ " ");
+        i--;
+      }
+      rowMax--;
+      i = rowMax-1; j = rowMin;
+      while (i >= j) {
+        System.out.print(matrix[i][colMin]+ " ");
+        i--;
+      }
+      colMin++;
+    }
   }
 
   /*
@@ -470,10 +503,15 @@ class Chapter_1_ArraysStrings {
     findDuplicates(dups);
     System.out.println("\n");
 
-    System.out.println("­10.Print a matrix in a spigral manner");
-    int[][] mat = {{1, 2, 3},
-                 {4, 5, 6},
-                 {7, 8, 9}};
+    System.out.println("­10.Print a matrix in a spiral manner");
+    int[][] mat = {{ 1,  2,  3,  4},
+                   { 5,  6,  7,  8},
+                   { 9, 10, 11, 12},
+                   {13, 14, 15, 16}};
+
+    // int[][] mat = {{1, 2, 3},
+    //                {4, 5, 6},
+    //                {7, 8, 9}};
     printMatrixSpiral(mat);
     System.out.println("\n");
 
