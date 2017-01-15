@@ -287,7 +287,7 @@ class Chapter_1_ArraysStrings {
     7 8 9    70 80 90   490 640 810
 
     i = 0
-    j = 0
+    j = 1
     k = 2
 
   */
@@ -308,15 +308,35 @@ class Chapter_1_ArraysStrings {
 
   /*
   ­9.Find all duplicates in an array
+  - Option 1 with a HashSet
   */
-  public static void method9(String input) {
-
+  public static void findDuplicates(int[] input) {
+    HashSet<Integer> set = new HashSet<Integer>();
+    for (int i=0; i<input.length; i++) {
+      if (set.contains(input[i])) {
+        System.out.print(input[i] + " ");
+      } else {
+        set.add(input[i]);
+      }
+    }
   }
 
   /*
   ­10.Print a matrix in a spigral manner
+  {{1, 2, 3},
+   {4, 5, 6},
+   {7, 8, 9}};
+   00,
+   01,
+   02,
+   12,
+   22,
+   21,
+   20,
+   10,
+   11
   */
-  public static void method10(String input) {
+  public static void printMatrixSpiral(int[][] matrix) {
 
   }
 
@@ -444,6 +464,18 @@ class Chapter_1_ArraysStrings {
     int[] stocks = {100, 180, 260, 310, 40, 535, 695};
     maxProfit(stocks);
     System.out.println("");
+
+    System.out.println("9.Find all duplicates in an array");
+    int[] dups = {100, 180, 100, 310, 40, 40, 695};
+    findDuplicates(dups);
+    System.out.println("\n");
+
+    System.out.println("­10.Print a matrix in a spigral manner");
+    int[][] mat = {{1, 2, 3},
+                 {4, 5, 6},
+                 {7, 8, 9}};
+    printMatrixSpiral(mat);
+    System.out.println("\n");
 
     System.out.println("11.Given two strings, write a function that returns the longest common substring.");
     String a = "ABAB";
