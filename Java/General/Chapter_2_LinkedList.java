@@ -12,6 +12,7 @@ Questions
 7.Delete all nodes with value k
 8.Shuffles two list together
 9.Array list to linked list
+10.Remove kth to last node
 */
 
 class Chapter_2_LinkedList {
@@ -345,6 +346,34 @@ class Chapter_2_LinkedList {
     return prev;
   }
 
+  /*
+  10.Remove kth to last node
+  */
+  public static void removeKthToLast(Node head, int k) {
+    if (head == null) return;
+    if (k <= 0) return;
+
+    Node first = head;
+    Node second = head;
+    int i = 0;
+    while (i < k) {
+      if (first == null) return;
+      first = first.next;
+      i++;
+    }
+
+    while (first != null) {
+      first = first.next;
+      second = second.next;
+    }
+    Node next = second.next;
+    if (next == null) {
+      second.next = null;
+    } else {
+      second.data = next.data;
+      second.next = next.next;
+    }
+  }
 
   public static void main (String[] args) {
     Node n1 = new Node(1);
@@ -443,6 +472,12 @@ class Chapter_2_LinkedList {
     System.out.println("9.Array to linked list");
     int[] array = {1,2,3,4,5,6,8,10,11};
     Node linkedListArray = arrayToLinkedList(array);
+    print(linkedListArray);
+    System.out.println("");
+
+    System.out.println("10.Remove kth to last node");
+    print(linkedListArray);
+    removeKthToLast(linkedListArray,3);
     print(linkedListArray);
     System.out.println("");
 
