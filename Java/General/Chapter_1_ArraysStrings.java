@@ -347,28 +347,19 @@ class Chapter_1_ArraysStrings {
     int j = colMax;
     while (rowMin < rowMax && colMin < colMax) {
       i = colMin; j = colMax;
-      while (i < j) {
-        System.out.print(matrix[rowMin][i]+ " ");
-        i++;
-      }
+      while (i < j) { System.out.print(matrix[rowMin][i]+ " "); i++; }
       rowMin++;
+
       i = rowMin; j = rowMax;
-      while (i < j) {
-        System.out.print(matrix[i][colMax-1]+ " ");
-        i++;
-      }
+      while (i < j) { System.out.print(matrix[i][colMax-1]+ " "); i++; }
       colMax--;
+
       i = colMax-1; j = colMin;
-      while (i >= j) {
-        System.out.print(matrix[rowMax-1][i]+ " ");
-        i--;
-      }
+      while (i >= j) { System.out.print(matrix[rowMax-1][i]+ " "); i--; }
       rowMax--;
+
       i = rowMax-1; j = rowMin;
-      while (i >= j) {
-        System.out.print(matrix[i][colMin]+ " ");
-        i--;
-      }
+      while (i >= j) { System.out.print(matrix[i][colMin]+ " ");  i--; }
       colMin++;
     }
   }
