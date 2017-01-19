@@ -13,7 +13,7 @@ from left to right only modifiying the existing pointers.
 
    <- 4 <-> 2 <-> 5 <-> 1 <-> 6 <-> 3 <-> 7 ->
 */
-class BinaryTreeToLinkedList {
+class TreeToDoublyLinkedList {
 
   static class Node {
     int data;
@@ -54,7 +54,6 @@ class BinaryTreeToLinkedList {
 
     printInOrder(n.left);
     System.out.print(n.data + " ");
-
     printInOrder(n.right);
   }
 

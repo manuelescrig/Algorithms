@@ -9,7 +9,7 @@ where every node has the same value. Given a binary tree, return a pointer
 to the largest common value subtree in that tree.
 */
 
-class BinaryTreeCommonValueSub {
+class CommonValueSubTree {
 
   static class Node {
     int data;
@@ -19,7 +19,7 @@ class BinaryTreeCommonValueSub {
       this.data = data;
     }
   }
-  // pree-order
+  // pre-order traversal
   public static Node commonValueSubtree(Node root) {
     Node result = null;
     Stack<Node> stack = new Stack<Node>();

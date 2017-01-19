@@ -16,7 +16,7 @@ path(8,6) = 8,7,6
 
 */
 
-class BinaryTreeNodeToNode {
+class PathBetweenTwoNodes {
 
   static class Node {
     int data;

@@ -17,7 +17,7 @@ length = 3;
 
  */
 
-class BinaryTreeLongestBranch {
+class LongestBranch {
 
   static class Node {
     int data;

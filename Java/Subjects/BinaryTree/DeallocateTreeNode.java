@@ -6,7 +6,7 @@ import java.io.*;
 then deallocates all the nodes in that binary search tree.
 */
 
-class BinaryTreeDeallocate {
+class DeallocateTreeNode {
 
   static class Node {
     int data;
@@ -16,7 +16,7 @@ class BinaryTreeDeallocate {
       this.data = data;
     }
   }
-// post-order
+// post-order traversal
   public static void deallocateTree(Node root) {
     if (root.left != null) {
       deallocateTree(root.left);

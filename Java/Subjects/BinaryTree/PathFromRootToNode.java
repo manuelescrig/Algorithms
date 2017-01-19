@@ -26,7 +26,7 @@ Question B. Find the longest path from root to leaf in a tree
 
 */
 
-class BinaryTreePaths {
+class PathFromRootToNode {
 
   static class Node {
     int data;
