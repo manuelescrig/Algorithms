@@ -30,7 +30,6 @@ closedBrackets = 2;
 class FlipBrackets {
 
   public static int findMininumNumber(String s) {
-
     int counter = 0;
     int brackets = 0;
 

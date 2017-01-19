@@ -13,7 +13,7 @@ n + n-1 + n-2 + n-3  ... n-n => O(n!)
 
 */
 
-class DPFibonacci {
+class Fibonacci {
 
   public static int fibonnaci(int n) {
     if (n==0) return 0;
@@ -40,7 +40,7 @@ class DPFibonacci {
       sum += r;
     }
 
-    if(map.containsKey(key2)) {
+    if (map.containsKey(key2)) {
       sum += map.get(key2);
     } else {
       int r = fibonnaciMemoizaton(map,n-2);

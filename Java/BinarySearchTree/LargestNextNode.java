@@ -15,11 +15,12 @@ largestNext(2) = 3;
 largestNext(5) = 6;
 largestNext(1) = 1;
 largestNext(7) = 8;
+largestNext(3) = 5;
 
 */
 
 
-class BinarySearchTreeNextNode {
+class LargestNextNode {
 
   static class Node {
     int data;

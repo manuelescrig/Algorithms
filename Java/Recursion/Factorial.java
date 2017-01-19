@@ -6,7 +6,7 @@ import java.io.*;
 Recall that n! = 1 × 2 × ... × n, with the special case that 0! = 1.
 */
 
-class RecursionFactorial {
+class Factorial {
 
   public static int factorial(int n) {
     if (n == 0) return 1;

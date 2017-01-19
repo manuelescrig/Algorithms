@@ -4,16 +4,7 @@ import java.io.*;
 
 /*
 
-Examples:
-}{ -> 2 flips will give {}
-{}{}{} -> No flips required
-{{{} -> 1 flip (second bracket) is required
-{{{}}}{} -> No flips required
-{{}} -> No flips required
-{}}} -> 1 flips required
-{{{{ -2 2 flips
-{}{{{{{{
-}}{{ => {}{}, {{}}
+Algorithm to check if the brackets are balanced with a Stack.
 
 */
 

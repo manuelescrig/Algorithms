@@ -10,7 +10,7 @@ change(32) = 4
 
 */
 
-class DPCoins {
+class Coins {
 
   public static int change(int[] coins, int x) {
     int[] cache = new int[x];

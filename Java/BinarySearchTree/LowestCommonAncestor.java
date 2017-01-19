@@ -5,7 +5,7 @@ import java.io.*;
 
 */
 
-class BinarySearchTreeLCA {
+class LowestCommonAncestor {
 
   static class Node {
     int data;

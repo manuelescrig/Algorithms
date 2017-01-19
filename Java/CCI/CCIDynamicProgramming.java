@@ -251,7 +251,7 @@ class CCIDynamicProgramming {
     // System.out.println(result.toString());
 
     // 8.5 Recursive Multiply
-    //System.out.println(multiply(6,6));
+    System.out.println(multiply(6,5));
 
     // 8.6 Towers of Hanoi;
     // Stack<Integer> s1 = new Stack<Integer>();

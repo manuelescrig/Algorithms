@@ -17,7 +17,7 @@ then returns whether it's a valid binary search tree.
 
 */
 
-class BinaryTreeBalanced {
+class IsBalanced {
 
   static class Node {
     int data;
