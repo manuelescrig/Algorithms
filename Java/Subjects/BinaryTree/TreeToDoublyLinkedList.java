@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a Tree, write a function to convert it into a Circular Doubly Linked List
 from left to right only modifiying the existing pointers.
@@ -13,6 +14,7 @@ from left to right only modifiying the existing pointers.
 
    <- 4 <-> 2 <-> 5 <-> 1 <-> 6 <-> 3 <-> 7 ->
 */
+
 class TreeToDoublyLinkedList {
 
   static class Node {

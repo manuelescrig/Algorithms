@@ -1,8 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-5. Write a recursive function that,
+Write a recursive function that,
 given a pointer to the root of a binary search tree,
 prints out the elements in that tree in sorted order.
 */
@@ -19,7 +20,6 @@ class PrintSorted {
   }
   // level-order BFS
   public static void iterative(Node root) {
-
     Queue<Node> queue = new LinkedList<Node>();
     queue.add(root);
 
@@ -30,7 +30,6 @@ class PrintSorted {
       if (node.left != null) queue.add(node.left);
       if (node.right != null) queue.add(node.right);
     }
-
     return;
   }
 

@@ -1,13 +1,14 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-5. Write a recursive function that,
+Write a recursive function that,
 given a pointer to the root of a binary search tree,
 prints out the elements in that tree in sorted order.
 */
 
-class RecursionPrintTree {
+class PrintSortedOrder {
 
   static class Node {
     int data;
@@ -17,7 +18,8 @@ class RecursionPrintTree {
       this.data = data;
     }
   }
-  // in-order
+
+  // in-order traversal
   public static void recursionSorted(Node root) {
 
     if (root.left != null) recursionSorted(root.left);

@@ -1,8 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-21. Write a function that takes as input a pointer to the root of a binary tree,
+Write a function that takes as input a pointer to the root of a binary tree,
 then returns whether it's a valid binary search tree.
 
 
@@ -21,10 +22,9 @@ true
      /  \   /  \
     1   3  4   8
 false
-
 */
 
-class BinaryTree {
+class IsBinarySearchTree {
 
   static class Node {
     int data;
@@ -47,23 +47,6 @@ class BinaryTree {
     if (n.data > max || n.data < min) return false;
     return isBST(n.left, min, n.data) &&
            isBST(n.right, n.data + 1, max);
-  }
-
-  public static void levelOrder(Node n) {
-    Queue<Node> queue = new LinkedList<Node>();
-    queue.add(n);
-
-    while (!queue.isEmpty()) {
-      Node temp = queue.remove();
-      System.out.print(temp.data + " ");
-
-      if (temp.left != null){
-        queue.add(temp.left);
-      }
-      if (temp.right != null) {
-        queue.add(temp.right);
-      }
-    }
   }
 
   public static void main (String[] args) {

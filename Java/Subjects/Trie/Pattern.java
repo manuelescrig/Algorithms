@@ -1,8 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-36. Write a function that, given a pattern string consisting of a series
+Write a function that, given a pattern string consisting of a series
 of letters intermixed with question marks (for example, a string like do?ble)
 and a pointer to the root of a trie, returns all words in the trie that match
 the pattern, where a question mark matches any single character. If given the
@@ -10,6 +11,7 @@ pattern do?ble, for example, and a trie of all words in English, your code
 should return doable and double. Given the pattern ??, it would return a
 list of all two-letter words in English.
 */
+
 class Pattern {
   public static class Node {
     String prefix;

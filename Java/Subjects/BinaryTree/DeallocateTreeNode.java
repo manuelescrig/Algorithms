@@ -1,8 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-22. Write a function that takes in a pointer to the root of a binary search tree,
+Write a function that takes in a pointer to the root of a binary search tree,
 then deallocates all the nodes in that binary search tree.
 */
 
@@ -16,7 +17,8 @@ class DeallocateTreeNode {
       this.data = data;
     }
   }
-// post-order traversal
+
+  // post-order traversal
   public static void deallocateTree(Node root) {
     if (root.left != null) {
       deallocateTree(root.left);

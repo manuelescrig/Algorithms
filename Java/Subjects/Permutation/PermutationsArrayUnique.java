@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 [1,1,2] have the following unique permutations:
 [
@@ -10,7 +11,7 @@ import java.io.*;
 ]
 */
 
-class RecursionKPermutations2 {
+class PermutationsArrayUnique {
   public static void backTrack(List<List<Integer>> list, ArrayList<Integer> temp, int[] nums, boolean[] used) {
     if (temp.size() == nums.length) {
       list.add(new ArrayList<>(temp));
@@ -33,18 +34,18 @@ class RecursionKPermutations2 {
     return list;
   }
 
-  public static void main (String[] args) {
-    //int[] elements = {1,2,3,4,5};
-    int[] elements = {1,1,2};
-    List<List<Integer>> result = permute(elements);
-    System.out.println(result.toString());
-  }
-
   public static void print(int[] set) {
     System.out.print("[");
     for (int i=0; i<set.length-1; i++) {
       System.out.print(set[i] + ",");
     }
     System.out.print(set[set.length-1]+"]");
+  }
+
+  public static void main (String[] args) {
+    //int[] elements = {1,2,3,4,5};
+    int[] elements = {1,1,2};
+    List<List<Integer>> result = permute(elements);
+    System.out.println(result.toString());
   }
 }

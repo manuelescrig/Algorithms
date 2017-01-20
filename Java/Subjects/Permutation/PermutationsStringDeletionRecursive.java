@@ -35,10 +35,9 @@ ABCD = 16
 0b0000
 0b0001
 2^n
-
 */
 
-class PermutationsStringsB {
+class PermutationsStringDeletionRecursive {
 
 	public static String findWord(String input, HashSet<String> dict) {
 		if (input.length() == 0) return null;

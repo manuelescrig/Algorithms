@@ -1,11 +1,12 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-Binary Search Tree Questions
+Find Root Of node.
 */
 
-class BinarySearchTreeQuestions {
+class FindRootOf {
 
   static class Node {
     int data;
@@ -70,44 +71,6 @@ class BinarySearchTreeQuestions {
       return null;
   }
 
-  // BFS
-  public static void printLevelOrder(Node n) {
-    Queue<Node> queue = new LinkedList<Node>();
-    queue.add(n);
-    while (!queue.isEmpty()) {
-      Node temp = queue.remove();
-      if (temp == null) return;
-      System.out.println(temp.data);
-
-      if (temp.left != null) {
-        queue.add(temp.left);
-      }
-      if (temp.right != null) {
-        queue.add(temp.right);
-      }
-    }
-  }
-
-  // DFS
-  public static void printPreOrder(Node n) {
-    Stack<Node> stack = new Stack<Node>();
-    stack.push(n);
-    while (!stack.isEmpty()) {
-      Node temp = stack.pop();
-      if (temp == null) continue;
-      System.out.println(temp.data);
-
-      if (temp.right != null) {
-        stack.push(temp.right);
-      }
-
-      if (temp.left != null) {
-        stack.push(temp.left);
-      }
-    }
-  }
-
-
   public static void main (String[] args) {
     Node n1 = new Node(1);
     Node n2 = new Node(2);
@@ -132,11 +95,5 @@ class BinarySearchTreeQuestions {
     System.out.println("---");
     Node result = findRootOf(n4, 2);
     System.out.println(result.data);
-
-    System.out.println("---");
-    printLevelOrder(n4);
-
-    System.out.println("---");
-    printPreOrder(n4);
   }
 }

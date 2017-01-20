@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a LinkedList where each node has two pointers. Write a function to
 clone the LinkedList.

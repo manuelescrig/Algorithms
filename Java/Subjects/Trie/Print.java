@@ -1,10 +1,12 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-33. Write a function that, given a pointer to the root of a trie,
+Write a function that, given a pointer to the root of a trie,
 prints out all words in that trie.
 */
+
 class Print {
 
   public static class Node {

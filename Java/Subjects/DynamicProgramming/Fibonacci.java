@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a N number  write a function to compute the nth fibonnaci number.
 
@@ -10,7 +11,6 @@ N = 2  => 1+1 = 2
 N = 0  => 0
 
 n + n-1 + n-2 + n-3  ... n-n => O(n!)
-
 */
 
 class Fibonacci {

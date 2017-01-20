@@ -1,9 +1,11 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Trie Example
 */
+
 class AutoComplete {
 
   public static class Node {

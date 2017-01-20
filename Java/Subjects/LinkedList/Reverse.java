@@ -1,8 +1,8 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-/*
 
+/*
 */
 
 class Reverse {
@@ -15,7 +15,6 @@ class Reverse {
       this.data = data;
       this.next = null;
     }
-
   }
 
   public static void print(Node n) {

@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a string in a dictionary (hashSet) write a function to determine the
 minumum number of characters to delete to make it a word.
@@ -19,12 +20,11 @@ Can we add characters to the query?
     BFS
 
 ---
-Time complexity n * n-1 * n-2 ... * 1 = O(n!) 
-
+Time complexity n * n-1 * n-2 ... * 1 = O(n!)
 */
 
 
-class StringDeletion {
+class PermutationsStringDeletionBFS {
 
   public static int delete(String query, HashSet<String> dict) {
 

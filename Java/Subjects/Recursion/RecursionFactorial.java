@@ -1,12 +1,13 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-1. Write a recursive implementation of the factorial function.
+Write a recursive implementation of the factorial function.
 Recall that n! = 1 × 2 × ... × n, with the special case that 0! = 1.
 */
 
-class Factorial {
+class RecursionFactorial {
 
   public static int factorial(int n) {
     if (n == 0) return 1;

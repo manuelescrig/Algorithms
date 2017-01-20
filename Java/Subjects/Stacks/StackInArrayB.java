@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Create N stacks in an array.
 Stacks
@@ -24,9 +25,8 @@ push (2, 1)
 push (3, 2)
 push (4, 1)
 pop (1) -> 4
-
-
 */
+
 class StackInArray {
 
   public static class Stacks {

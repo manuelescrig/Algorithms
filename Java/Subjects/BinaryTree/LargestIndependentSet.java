@@ -1,8 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /**
-Q) Given a binary tree find the size of largest independent set (LIS).
+Given a binary tree find the size of largest independent set (LIS).
 This means that no two nodes in final set have direct parent-child
 relationship with each other.
 
@@ -32,8 +33,7 @@ Result = a1,a3,a5;
       /\
      a2 a3
  Result = a2,a3;
-
- */
+*/
 
 class BinaryTreeLIS {
 

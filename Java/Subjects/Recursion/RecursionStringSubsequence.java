@@ -1,14 +1,15 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-6. Write a recursive function that, given two strings,
+Write a recursive function that, given two strings,
 returns whether the first string is a subsequence of the second.
 For example, given hac and cathartic, you should return true,
 but given bat and table, you should return false.
 */
 
-class RecursionSubsequence {
+class RecursionStringSubsequence {
 
   public static boolean subsequence(String s1, String s2, int n, int m) {
     if (n >= s1.length() && s1.charAt(n-1) == s2.charAt(m-1)) return true;
@@ -21,10 +22,10 @@ class RecursionSubsequence {
   }
 
   public static void main (String[] args) {
-    String s1 = "bat";
-    String s2 = "table";
-    //String s1 = "hac";
-    //String s2 = "cathartic";
+    // String s1 = "bat";
+    // String s2 = "table";
+    String s1 = "hac";
+    String s2 = "cathartic";
 
     System.out.println(subsequence(s1,s2, 0, 0));
   }

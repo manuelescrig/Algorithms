@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a list of array, return a list of arrays,
 each array is a combination of one element in each given array.
@@ -36,7 +37,7 @@ class PermutationsArrayOfArrays {
 		for (int i=0; i<indexes.length; i++) {
 				temp.add(input.get(i).get(indexes[i]));
 		}
-		
+
 		result.add(temp);
 
 		// Increment

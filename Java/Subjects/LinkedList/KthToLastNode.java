@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 You have a linked list and want to find the kth to last node.
 Write a function kthToLastNode() that takes an integer

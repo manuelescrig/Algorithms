@@ -1,8 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-21. Write a function that takes as input a pointer to the root of a binary tree,
+Write a function that takes as input a pointer to the root of a binary tree,
 then returns whether it's a valid binary search tree.
 
                1

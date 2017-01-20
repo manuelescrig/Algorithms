@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Question A. Print the path from root to a particular node given as input in a
 binary tree in the sequential order.
@@ -23,7 +24,6 @@ Question B. Find the longest path from root to leaf in a tree
    1   3   6   8
       / \
      9  10
-
 */
 
 class PathFromRootToNode {

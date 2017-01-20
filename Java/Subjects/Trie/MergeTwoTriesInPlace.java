@@ -1,11 +1,13 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-34. Write a function that, given pointers to the roots of two tries,
+Write a function that, given pointers to the roots of two tries,
 returns a pointer to the root of a new trie that contains all the words
 present in both tries.
 */
+
 class MergeTwoTriesInPlace {
 
   public static class Node {

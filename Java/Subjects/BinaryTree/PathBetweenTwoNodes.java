@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Find Path Between Two Nodes in a Binary Tree
 (need not be BST or balanced).
@@ -13,7 +14,6 @@ Find Path Between Two Nodes in a Binary Tree
 
 path(3,6) = 3,2,5,7,6
 path(8,6) = 8,7,6
-
 */
 
 class PathBetweenTwoNodes {

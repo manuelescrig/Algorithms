@@ -3,9 +3,7 @@ import java.lang.*;
 import java.io.*;
 
 /*
-
 Algorithm to check if the brackets are balanced with a Stack.
-
 */
 
 class BalancedBrackets {

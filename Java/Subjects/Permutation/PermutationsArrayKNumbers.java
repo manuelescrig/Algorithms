@@ -1,8 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
-10. Given a list of n distinct elements and a number k,
+Given a list of n distinct elements and a number k,
 write a function that lists all k­element permutations of that list.
 k = 2;
 {1,2} => {1,2} {2,1}
@@ -20,7 +21,7 @@ k = 2;
 
 */
 
-class RecursionKPermutations {
+class PermutationsArrayKNumbers {
 
   public static void backTrack(List<List<Integer>> list, List<Integer> temp, int[] nums, int start) {
     if (temp.size() == nums.length) {
@@ -41,18 +42,18 @@ class RecursionKPermutations {
     return list;
   }
 
-  public static void main (String[] args) {
-    //int[] elements = {1,2,3,4,5};
-    int[] elements = {1,2,3};
-    List<List<Integer>> result = permute(elements);
-    System.out.println(result.toString());
-  }
-
   public static void print(int[] set) {
     System.out.print("[");
     for (int i=0; i<set.length-1; i++) {
       System.out.print(set[i] + ",");
     }
     System.out.print(set[set.length-1]+"]");
+  }
+
+  public static void main (String[] args) {
+    //int[] elements = {1,2,3,4,5};
+    int[] elements = {1,2,3};
+    List<List<Integer>> result = permute(elements);
+    System.out.println(result.toString());
   }
 }

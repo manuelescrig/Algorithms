@@ -28,11 +28,9 @@ Result = 6
 
 */
 
-class RecursionSubArraysModulo {
+class RecursionArraySubArraysModulo {
 
   public static void subsets(int[] elements, int n, int m) {
-    //System.out.println(n+","+m);
-
     if (n >= elements.length) return;
     if (m <= 0) return;
     if (n >= m) return;
@@ -48,12 +46,9 @@ class RecursionSubArraysModulo {
 
 
   public static int subArrays(int[] a, int k, int n) {
-    if (n == a.length-1) {
-      return 0;
-    }
+    if (n == a.length-1) {  return 0; }
 
     int max = Integer.MIN_VALUE;
-
     for (int i=n; i<a.length; i++) {
       System.out.println(i+","+n);
       int[] temp  = Arrays.copyOfRange(a,n,i+1);
@@ -83,7 +78,6 @@ class RecursionSubArraysModulo {
   public static void main (String[] args) {
     int[] a = {3,3,9,9,5};
     int k = 7;
-
     int result = subArrays(a,k,0);
     System.out.println(result);
   }

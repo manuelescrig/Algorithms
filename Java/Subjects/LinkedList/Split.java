@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a LinkedList, write a function that divides it into two halves.
 This function should modify the original list and then return a pointer to
@@ -26,7 +27,6 @@ l = 1
 r = devide(l)
 l =
 r =
-
 */
 
 class Split {
@@ -39,8 +39,8 @@ class Split {
       this.data = data;
       this.next = null;
     }
-
   }
+  
   public static void print(Node n) {
     Node curr = n;
     while (curr != null) {

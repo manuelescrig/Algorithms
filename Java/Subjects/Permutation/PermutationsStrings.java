@@ -1,9 +1,9 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Write a function that returns all permutations of a given string.
-
 */
 
 class PermutationsStrings {
@@ -32,5 +32,4 @@ class PermutationsStrings {
 		ArrayList<String> result = permutations(s);
 		System.out.println(result.toString());
 	}
-
 }

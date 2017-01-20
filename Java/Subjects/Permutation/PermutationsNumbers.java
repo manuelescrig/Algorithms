@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Write a function that returns all permutations of a given list.
 Input:
@@ -18,7 +19,6 @@ Input:
 Output:
 {1,2}
 {2,1}
-
 */
 
 class PermutationsNumbers {
@@ -35,7 +35,10 @@ class PermutationsNumbers {
 		} else {
 			for (int i=n; i< a.length; i++) {
 				swap(a, n, i);
-				for (int x : a) { System.out.print(x+","+i+","+n+" "); } System.out.println(" ");
+				for (int x : a) {
+					 System.out.print(x+","+i+","+n+" ");
+				 }
+				System.out.println(" ");
 				permutateVector(n+1, a, result);
 				swap(a, n, i);
 			}
