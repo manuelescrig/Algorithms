@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given list of bytes a, each representing one byte of a larget integer
 and an integer b, find a % b.
@@ -20,9 +21,7 @@ class FindMod {
     return m;
   }
 
-
   public static void main (String[] args) {
-
     byte[] a = {(byte)0x03, (byte)0xED};
     int b = 10;
     System.out.println(mod(a,b));

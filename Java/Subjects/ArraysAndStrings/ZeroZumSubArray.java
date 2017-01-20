@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given an Array, write a function to find any subarray that sums to zero, if
 one exists.
@@ -20,18 +21,24 @@ class ZeroZumSubArray {
   public static int THREE_SUM_TARGET = 0;
 
   public static int[] zeroSum(int[] array) {
+
+    // Create a HashMap to keep tracks of the current sum values
     HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
-    int sum = 0;
+    // Current sum
+    int currentSum = 0;
+
+    // Iterate once trough the array
     for (int i=0; i<=array.length; i++) {
-      map.put(sum,i);
+      map.put(currentSum,i);
       if (i < array.length) {
-        sum += array[i];
+        currentSum += array[i];
       } else {
         return null;
       }
-      if (map.containsKey(sum)) {
-        int start = map.get(sum);
+      if (map.containsKey(currentSum)) {
+        // Copy Array from 0 to current value
+        int start = map.get(currentSum);
         int end = i--;
         return Arrays.copyOfRange(array, start, end+1);
       }

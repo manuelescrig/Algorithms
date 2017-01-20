@@ -3,8 +3,10 @@ import java.lang.*;
 import java.io.*;
 
 /*
-
-Q) Given the string of brackets. Return the minimum number of flips needed to make the string look like a balanced bracket expression. You can only flip the brackets ({->} and }->{), delete or add is not allowed. No additional space can be used here.
+Given the string of brackets. Return the minimum number of flips needed to
+make the string look like a balanced bracket expression. You can only flip
+the brackets ({->} and }->{), delete or add is not allowed. No additional
+space can be used here.
 
 Constraint: Can't use additional space (O(n) space) like Array or Set etc
 

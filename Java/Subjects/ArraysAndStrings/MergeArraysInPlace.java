@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given two sorted A and B, where A is long enough to hold the contents of A and
 B, write a function to copy the contents of B into A without using any buffer
@@ -14,8 +15,8 @@ i    ^
 j    ^
 B => 2  4  6
 k  ^
-
 */
+
 class MergeArraysInPlace {
 
   public static void copy(int[] A, int[] B) {
@@ -23,9 +24,11 @@ class MergeArraysInPlace {
     int j = B.length-1;
     int k = (A.length - B.length) - 1;
 
+    // Iterate trough the bigger array from the end to the start O(n)
     for (int i=A.length-1; i>=0; i--) {
       if (k < 0 || j < 0) break;
 
+      // Check for the biggest element
       if (B[k] > A[j]) {
          A[i] = B[k];
          k--;
@@ -35,7 +38,6 @@ class MergeArraysInPlace {
          j--;
       }
     }
-
   }
 
   public static void print(int[] arr) {
@@ -54,7 +56,6 @@ class MergeArraysInPlace {
     } catch (Exception e) {
       e.printStackTrace();
     }
-
     print(A);
   }
 }

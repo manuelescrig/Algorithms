@@ -1,11 +1,12 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a 2D array of 1s and 0s, find the largest square subarray all of 1s.
 */
 
-class MatrixFindLargestSquare {
+class MatrixLargestSquare {
 
   public static void print(int[][] array) {
     for (int row=0; row<array.length; row++) {

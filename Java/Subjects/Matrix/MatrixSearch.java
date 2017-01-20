@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a nxm array where all rows and columns are in sorted order
 write a function to determine whether the array contains an element x.
@@ -16,7 +17,6 @@ find(20) = false;
 target  = 0
 row     = 3
 col     = 0
-
 */
 
 class MatrixSearch {
@@ -26,9 +26,12 @@ class MatrixSearch {
     int row = 0;
     int col = matrix.length - 1;
 
+    // Iterate from row = 0 and col = matrix.length-1
     while (row < matrix[0].length && col >= 0) {
       if (matrix[row][col] == number) return true;
+      // Increase rows
       if (matrix[row][col] < number) row++;
+      // Decrease cols
       else col--;
     }
     return false;

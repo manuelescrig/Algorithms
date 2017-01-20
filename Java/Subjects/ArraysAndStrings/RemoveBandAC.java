@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 2
 acbac
@@ -11,10 +12,13 @@ aaac
 */
 
 class RemoveBandAC {
-  public static void main (String[] args) {
-    String string = "aababc";
+
+  public static String removeACPattern(String string) {
+    // Use a StringBuilder in order to reduce time complexity
     StringBuilder sb = new StringBuilder();
     char last = ' ';
+
+    // Iterate trough the chars of the String
     for (int i=0;i<string.length(); i++) {
       char cur = string.charAt(i);
       if (cur == 'b') {
@@ -30,6 +34,11 @@ class RemoveBandAC {
       }
       last = cur;
     }
-    System.out.println(sb.toString());
+    return sb.toString();
+  }
+
+  public static void main (String[] args) {
+    String string = "aababc";
+    System.out.println(removeACPattern(string));
 	}
 }

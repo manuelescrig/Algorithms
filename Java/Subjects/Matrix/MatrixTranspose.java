@@ -1,8 +1,8 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-/*
 
+/*
 Write a method that takes as input a 2D array and returns
 a new 2D array which is its transpose.
 1 2  =>   1

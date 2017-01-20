@@ -1,20 +1,19 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-/*
 
+/*
+Given an array of integers find the ranges of missing numbers from 0 to 100.
 Examples:
 [] “0-99”
 [0] “1-99”
 [3, 5] “0-2,4,6-99”
 [0, 1, 2, 50, 52, 75] "3-49,51,53-74,76-99"
-
 */
 
 class FindMissingNumbers {
-  public static void main (String[] args) {
 
-    int[] array = {0,1,2,50,52,75,98};
+  public static String missingNumbers(int[] array) {
     StringBuilder result = new StringBuilder();
     int lastValue = -1;
     for (int i=0; i< array.length; i++) {
@@ -48,6 +47,11 @@ class FindMissingNumbers {
       if (lastValue != 99) result.append(lastValue+"-99");
       else result.append("99");
     }
-    System.out.println(result);
+    return result.toString();
+  }
+
+  public static void main (String[] args) {
+    int[] array = {0,1,2,50,52,75,98};
+    System.out.println(missingNumbers(array));
   }
 }

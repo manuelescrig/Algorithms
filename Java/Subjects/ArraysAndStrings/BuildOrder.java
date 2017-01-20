@@ -2,6 +2,18 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 /*
+Given a list of packages that need to be built and the dependencies for each
+package, determine a valid order in which to build the packages.
+eg.
+
+0:
+1: 0
+2: 0
+3: 1, 2
+4: 3
+
+output: 0, 1, 2, 3, 4
+
 */
 class BuildOrder {
 
@@ -11,7 +23,7 @@ class BuildOrder {
     List<Integer> result = new LinkedList<Integer>();
 
     for (int i=0; i<processes.length; i++) {
-      if(permMarks.contains(i)){
+      if (permMarks.contains(i)) {
         visit(i, processes, tempMarks,permMarks, result);
       }
     }

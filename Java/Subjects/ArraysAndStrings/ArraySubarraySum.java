@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given an unsorted array of nonnegative integers, find a continous subarray
 which adds to a given number.
@@ -13,7 +14,6 @@ Ouptut: Sum found between indexes 1 and 4
 
 Input: arr[] = {1, 4}, sum = 0
 Output: No subarray found
-
 */
 
 class ArraySubarraySum {

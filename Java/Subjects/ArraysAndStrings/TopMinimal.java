@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Find the top minimal m elements of n elements in O(n) time
 
@@ -29,11 +30,15 @@ O(n)
 class TopMinimal {
 
   public static ArrayList<Integer> minimalElements(int[] elements, int m) {
+
+    // Create the result array
     ArrayList<Integer> result = new ArrayList<Integer>(m);
     for (int e : elements) {
       if (result.isEmpty()) {
         result.add(e);
       } else {
+
+        // For each element check if is bigger than the others
         for (int i=0; i<m; i++) {
           if (e < result.get(i)) {
             result.add(i,e);

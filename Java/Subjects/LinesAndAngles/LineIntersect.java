@@ -1,13 +1,14 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given two lines, write a function to determine whether or not they
 intersect.
 
 y = mx + b;
-
 */
+
 class LineIntersect {
 
   public static class Line {
@@ -41,5 +42,4 @@ class LineIntersect {
 
       System.out.println(a.intersect(b));
   }
-
 }

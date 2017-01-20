@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given two sorted A and B, where A is long enough to hold the contents of A and
 B, write a function to copy the contents of B into A without using any buffer
@@ -16,14 +17,15 @@ k                   ^
 
 R => {1,  3,  4,  5,  6,  8, 10, 11,  12,  14,  15,  0}
 i                                                ^
-
 */
-class MergeArrays {
+
+class MergeArraysList {
 
   public static int[] mergeArrays(int[] A, int[] B) {
     if (A == null || A.length == 0) return B;
     if (B == null || B.length == 0) return A;
 
+    // Create a copy for the results Time Complexity O(n)
     int[] result = new int[A.length+B.length];
 
     int j = 0;
@@ -47,16 +49,22 @@ class MergeArrays {
     return result;
   }
 
+  // Merge a list of sorted lists
   public static int[] meregeListArrays(ArrayList<int[]> list) {
+    // Get the length of all the lists
     int sum = 0;
     for (int[] array : list) {
       sum += array.length;
     }
 
+    // Will hold a reference fo the indexes for the lists
     int[] indexes = new int[list.size()];
-    int[] result = new int[sum];
-    for (int i=0; i<result.length; i++) {
 
+    // Store the result
+    int[] result = new int[sum];
+
+    // Iterate trough the result from start to end - Time Complexity O(n)
+    for (int i=0; i<result.length; i++) {
       int smallest = Integer.MAX_VALUE;
       int index = 0;
       for (int j=0; j<list.size(); j++) {
@@ -75,7 +83,6 @@ class MergeArrays {
 
     return result;
   }
-
 
   public static void print(int[] arr) {
     System.out.print("{");

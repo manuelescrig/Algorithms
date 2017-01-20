@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a String, write a function to compress it by shortening every sequence
 of the same character to that character followed by the number of repetitions.
@@ -39,7 +40,6 @@ class StringCompression {
     if (sb.length() < s.length()) return sb.toString();
     else return s;
   }
-
 
   public static void main(String args[]) {
     System.out.println(compress("a"));

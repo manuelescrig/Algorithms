@@ -1,12 +1,14 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given two integers, an hour and a minute, write a function to calculate the
 angle between the two hands on a clock representing that time.
 eg.
 angle(11,10) -> 85º
 */
+
 class ClockAngle {
 
   public static final double RADIUS = 360;
