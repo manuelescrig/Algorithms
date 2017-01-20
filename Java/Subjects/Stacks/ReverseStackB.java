@@ -1,10 +1,10 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a stack, sort the elements in the stack using no more than one
 additional stack.
-
 
   4
   1           2
@@ -13,10 +13,9 @@ additional stack.
   -     -     -
 temp = 2
 a =
-
 */
 
-class StackReverse {
+class ReverseStackB {
 
   public static Stack<Integer> reverse(Stack<Integer> stack) {
     if (stack.isEmpty()) return stack;
@@ -43,10 +42,8 @@ class StackReverse {
     stack.push(3);
     stack.push(4);
 
+    System.out.println(stack.toString());
     Stack<Integer> reversed = reverse(stack);
-    while (!reversed.isEmpty()) {
-      System.out.println(reversed.pop());
-    }
-    System.out.println("-");
+    System.out.println(reversed.toString());
   }
 }

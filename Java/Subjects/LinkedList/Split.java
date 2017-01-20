@@ -29,7 +29,7 @@ r =
 
 */
 
-class LinkedListSplit {
+class Split {
 
   static class Node {
     int data;

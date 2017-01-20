@@ -1,6 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Given a stack, sort the elements in the stack using no more than one
 additional stack.
@@ -13,7 +14,6 @@ additional stack.
   -     -     -
 temp = 2
 a =
-
 */
 
 class StackSort {
@@ -54,7 +54,7 @@ class StackSort {
     3           3
     2           4
     -     -     -
-    temp  = 
+    temp  =
   */
   public static Stack<Integer> sortStackB(Stack<Integer> stack) {
     if (stack == null || stack.isEmpty()) return stack;

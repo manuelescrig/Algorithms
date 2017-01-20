@@ -37,7 +37,7 @@ Output : 6,8
 paths = {1,2} {1,2,3} {1,2,5} {1,2,5,7} {1,2,5,7,6} {1,2,5,7,8}
 */
 
-class KDistanceNodes {
+class KthDistanceNodes {
 
   static class Node {
     int data;

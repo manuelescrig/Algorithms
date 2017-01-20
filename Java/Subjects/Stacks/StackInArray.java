@@ -30,7 +30,7 @@ pop (1) -> 4
 */
 class StackInArray {
 
-  static class Stacks {
+  public static class Stacks {
     int capacity;
     int currentCapacity;
     int numberOfStacks;

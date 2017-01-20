@@ -3,7 +3,7 @@ import java.lang.*;
 import java.io.*;
 /*
 */
-class LinkedListCycle {
+class HasCycle {
   public static class Node {
     int value;
     Node next;
@@ -29,7 +29,7 @@ class LinkedListCycle {
       fast = fast.next.next;
     }
     return false;
-  }  
+  }
 
   public static void main (String[] args) {
   }

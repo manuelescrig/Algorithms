@@ -1,11 +1,10 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+
 /*
 Design a Stack with a push, pop and max function which returns the max value
 in the stack, all of which are run in O(n).
-
-
 */
 
 class StackMax {
@@ -76,6 +75,5 @@ class StackMax {
     System.out.println("m: " + stack.max());
     System.out.println(stack.pop());
     System.out.println(stack.pop());
-
   }
 }

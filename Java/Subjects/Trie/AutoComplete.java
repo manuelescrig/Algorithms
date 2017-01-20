@@ -4,7 +4,7 @@ import java.io.*;
 /*
 Trie Example
 */
-class TrieAutoComplete {
+class AutoComplete {
 
   public static class Node {
     String prefix; // abc

@@ -10,7 +10,7 @@ pattern do?ble, for example, and a trie of all words in English, your code
 should return doable and double. Given the pattern ??, it would return a
 list of all two-letter words in English.
 */
-class TriePattern {
+class Pattern {
   public static class Node {
     String prefix;
     HashMap<Character, Node> children;

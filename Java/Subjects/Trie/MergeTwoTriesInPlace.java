@@ -6,7 +6,7 @@ import java.io.*;
 returns a pointer to the root of a new trie that contains all the words
 present in both tries.
 */
-class MergeTries {
+class MergeTwoTriesInPlace {
 
   public static class Node {
     String prefix;
@@ -30,8 +30,7 @@ class MergeTries {
     Node curr = trie;
     for (int i=0; i<word.length(); i++) {
       if (!curr.children.containsKey(word.charAt(i))) {
-          curr.children.put(word.charAt(i),
-                            new Node(word.substring(0,i+1)));
+          curr.children.put(word.charAt(i), new Node(word.substring(0,i+1)));
       }
       curr = curr.children.get(word.charAt(i));
       if (i == word.length() - 1) curr.isWord = true;
@@ -39,9 +38,8 @@ class MergeTries {
   }
 
   public static Node mergeTries(Node trieA, Node trieB) {
-    Node result = trieA;
-    merge(result, trieB);
-    return result;
+    merge(trieA, trieB);
+    return trieA;
   }
 
   public static void merge(Node result, Node root) {
