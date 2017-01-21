@@ -8,8 +8,7 @@ Algorithm to check if the brackets are balanced with a Stack.
 
 class BalancedBrackets {
 
-  public static int hasBalancedBrackets(String str)
-{
+  public static int hasBalancedBrackets(String str) {
     if (str == null) return 1;
     if (str.length() == 0) return 1;
 

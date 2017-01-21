@@ -9,7 +9,7 @@ Linkded List Questions
 class CCILinkedLists {
 
   /*
-  2.1 Remove Dups: Write code to remove duplicates from an unsorted li nked list.
+  2.1 Remove Dups: Write code to remove duplicates from an unsorted linked list.
   */
 
   /*

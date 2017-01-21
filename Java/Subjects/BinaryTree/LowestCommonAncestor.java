@@ -21,7 +21,7 @@ class LowestCommonAncestor {
     Stack<Node> pathA = pathTo(tree,a);
     Stack<Node> pathB = pathTo(tree,b);
     if (pathB == null || pathA == null) return null;
-    Node prev = null;
+    Node prev = tree;
     while (!pathA.isEmpty() && !pathB.isEmpty()) {
       Node tempA = pathA.pop();
       Node tempB = pathB.pop();

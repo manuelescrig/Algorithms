@@ -116,7 +116,6 @@ class Chapter_4_TreesGraphs {
     return list;
   }
 
-
   /*
   2.PostOrder Recursive
   [1, 3, 2, 5, 8, 7, 6, 4]
@@ -148,7 +147,6 @@ class Chapter_4_TreesGraphs {
     return list;
   }
 
-
   /*
   3.LevelOrder BFS Iterative
   [4, 2, 6, 1, 3, 5, 7, 8]
@@ -168,7 +166,38 @@ class Chapter_4_TreesGraphs {
     return list;
   }
 
+  /*
+  3.LevelOrder BFS Iterative Print
+  [4, 2, 6, 1, 3, 5, 7, 8]
+  */
+  public static void levelOrder(TreeNode node) {
+    if (node == null) return;
+    Queue<TreeNode> queue = new LinkedList<TreeNode>();
+    queue.add(node);
+    while(!queue.isEmpty()) {
+      TreeNode temp = queue.remove();
+      System.out.print(temp.data + " ");
+      if (temp.left != null) queue.add(temp.left);
+      if (temp.right != null) queue.add(temp.right);
+    }
+  }
 
+  /*
+  4.Construct a BST from a sorted array Time Complexity: O(n)
+  {1,2,3}
+  */
+  public static TreeNode constructBST(int[] array, TreeNode node) {
+    if (array == null || array.length <= 0) return null;
+
+    int mid = (0 + array.length) / 2;
+    // System.out.println(array[mid]);
+    node = new TreeNode(array[mid]);
+    int[] left = Arrays.copyOfRange(array, 0, mid);
+    node.left = constructBST(left, node.left);
+    int[] right = Arrays.copyOfRange(array, mid+1, array.length);
+    node.right = constructBST(right, node.right);
+    return node;
+  }
 
   public static void main (String[] args) {
     TreeNode n1 = new TreeNode(1);
@@ -226,6 +255,11 @@ class Chapter_4_TreesGraphs {
     System.out.println(preOrder.toString());
     System.out.println("-");
 
-
+    System.out.println("4.Construct a BST from a sorted array");
+    int[] array = {1,2,3,4,5,6,7,8,9};
+    TreeNode root = null;
+    TreeNode result = constructBST(array, root);
+    levelOrder(result);
+    System.out.println("-");
   }
 }
