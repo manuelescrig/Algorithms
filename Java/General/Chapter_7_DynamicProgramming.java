@@ -8,7 +8,8 @@ Questions
 ­2.How many ways to go from top left of a grid to bottom right of the grid with some
   obstacles in between
 ­3.Implement both bottom up and top down solutions for both of the above
-
+4.Longest Common Subsequence
+5.Longest Common Substring
 */
 
 class Chapter_7_DynamicProgramming {
