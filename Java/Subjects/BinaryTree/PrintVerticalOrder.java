@@ -70,7 +70,6 @@ class PrintVerticalOrder {
   }
 
   public static void printVerticalOrder(Node root) {
-
       HashMap<Node, Integer> map = new HashMap<Node, Integer>();
       preOrder(map, root, 0);
       HashMap<Integer, ArrayList<Node>> postOrderMap = new HashMap<Integer, ArrayList<Node>>();

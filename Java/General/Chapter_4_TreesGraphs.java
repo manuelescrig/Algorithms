@@ -11,13 +11,13 @@ Questions
 ­6.Find max path sum in the tree, negative nodes possible
 ­7.Lowest common ancestor of 2 nodes in a tree
 
-          4
-        /   \
-       2     6
-      / \   / \
-     1  3  5  7
-               \
-                8
+          4               4
+        /   \           /  \
+       2     6         6    2
+      / \   / \      /  \  / \
+     1  3  5  7     7   5 3  1
+               \   /
+                8 8
 
 */
 
@@ -199,6 +199,120 @@ class Chapter_4_TreesGraphs {
     return node;
   }
 
+  /*
+  ­5.Check if two trees are mirror image of each other
+  Time Complexity : O(n)
+  */
+  public static boolean areMirror(TreeNode a, TreeNode b) {
+    if (a == null && b == null) return true;
+    if (a == null || b == null) return false;
+    Stack<TreeNode> stackA = new Stack<TreeNode>();
+    stackA.push(a);
+    Stack<TreeNode> stackB = new Stack<TreeNode>();
+    stackB.push(b);
+
+    while (!stackA.isEmpty() && !stackB.isEmpty()) {
+      TreeNode tempA = stackA.pop();
+      // System.out.println("A: " + tempA.data);
+      TreeNode tempB = stackB.pop();
+      // System.out.println("B: " + tempB.data);
+      if (tempA.data != tempB.data) return false;
+
+      if (tempA.right == null && tempB.left != null) return false;
+      if (tempA.left == null && tempB.right != null) return false;
+
+      if (tempA.right != null) stackA.push(tempA.right);
+      if (tempA.left != null) stackA.push(tempA.left);
+      if (tempB.left != null) stackB.push(tempB.left);
+      if (tempB.right != null) stackB.push(tempB.right);
+    }
+
+    if (stackA.isEmpty() && stackB.isEmpty()) return true;
+    else return false;
+  }
+
+  // Time Complexity : O(n)
+  public static boolean areMirrorRecursive(TreeNode a, TreeNode b)  {
+    /* Base case : Both empty */
+    if (a == null && b == null)
+    return true;
+
+    // If only one is empty
+    if (a == null || b == null)
+    return false;
+
+    /* Both non-empty, compare them recursively
+    Note that in recursive calls, we pass left
+    of one tree and right of other tree */
+    return a.data == b.data
+    && areMirror(a.left, b.right)
+    && areMirror(a.right, b.left);
+  }
+
+  /*
+  ­6.Find max path sum in the tree, negative nodes possible
+          4
+        /   \
+       2     6
+      / \   / \
+     1  3  5   7
+               \
+                8
+  */
+  public static int maxPathSumB(TreeNode root) {
+    if (root == null) return Integer.MIN_VALUE;
+    HashMap<TreeNode, TreeNode> map = new HashMap<TreeNode, TreeNode>();
+    Queue<TreeNode> leafs = new LinkedList<TreeNode>();
+    Queue<TreeNode> queue = new LinkedList<TreeNode>();
+    queue.add(root);
+
+    while(!queue.isEmpty()) {
+      TreeNode temp = queue.remove();
+      if (temp.left != null) {
+        queue.add(temp.left);
+        map.put(temp.left, temp);
+      }
+      if (temp.right != null) {
+        queue.add(temp.right);
+        map.put(temp.right,temp);
+      }
+      if (temp.right == null & temp.left == null) leafs.add(temp);
+    }
+
+    int maxSum = Integer.MIN_VALUE;
+    while (!leafs.isEmpty()) {
+      TreeNode leaf = leafs.remove();
+      int tempSum = leaf.data;
+      TreeNode parent = map.get(leaf);
+      while (parent != null) {
+        tempSum += parent.data;
+        if (parent.data < 0) {
+          parent = map.get(parent);
+          leafs.add(parent);
+        } else {
+          parent = map.get(parent);
+        }
+      }
+      if (tempSum > maxSum) maxSum = tempSum;
+    }
+
+    return maxSum;
+  }
+
+  public static int maxPathSum(TreeNode root) {
+      int maxValue = Integer.MIN_VALUE;
+      return maxPathDown(root, maxValue);
+  }
+
+  private static int maxPathDown(TreeNode node, int maxValue) {
+      if (node == null) return 0;
+      int left = Math.max(0, maxPathDown(node.left, maxValue));
+      int right = Math.max(0, maxPathDown(node.right, maxValue));
+      maxValue = Math.max(maxValue, left + right + node.data);
+      return Math.max(Math.max(left, right) + node.data, maxValue);
+  }
+
+
   public static void main (String[] args) {
     TreeNode n1 = new TreeNode(1);
     TreeNode n2 = new TreeNode(2);
@@ -208,7 +322,7 @@ class Chapter_4_TreesGraphs {
     TreeNode n6 = new TreeNode(6);
     TreeNode n7 = new TreeNode(7);
     TreeNode n8 = new TreeNode(8);
-    TreeNode n9 = new TreeNode(9);
+    // TreeNode n9 = new TreeNode(9);
 
     n4.left = n2;
     n2.left = n1;
@@ -217,7 +331,7 @@ class Chapter_4_TreesGraphs {
     n6.left = n5;
     n6.right = n7;
     n7.right = n8;
-    n8.right = n9;
+    // n8.right = n9;
 
     System.out.println("1.Check if tree is balanced");
     System.out.println(isBalanced(n4));
@@ -261,5 +375,29 @@ class Chapter_4_TreesGraphs {
     TreeNode result = constructBST(array, root);
     levelOrder(result);
     System.out.println("-");
+
+    System.out.println("­5.Check if two trees are mirror image of each other");
+    TreeNode b1 = new TreeNode(1);
+    TreeNode b2 = new TreeNode(2);
+    TreeNode b3 = new TreeNode(3);
+    TreeNode b4 = new TreeNode(4);
+    TreeNode b5 = new TreeNode(5);
+    TreeNode b6 = new TreeNode(6);
+    TreeNode b7 = new TreeNode(7);
+    TreeNode b8 = new TreeNode(8);
+    b4.left = b6;
+    b2.left = b3;
+    b2.right = b1;
+    b4.right = b2;
+    b6.left = b7;
+    b6.right = b5;
+    b7.left = b8;
+    System.out.println(areMirror(n4,b4));
+    System.out.println("-");
+
+    System.out.println("­6.Find max path sum in the tree, negative nodes possible");
+    System.out.println(maxPathSum(n4));
+    System.out.println("-");
+
   }
 }
