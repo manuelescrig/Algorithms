@@ -20,7 +20,7 @@ true
 false
 */
 
-class PrintLevelOrder {
+class BinaryTreePrintLevelOrder {
 
   static class Node {
     int data;

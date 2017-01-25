@@ -25,7 +25,7 @@ The output of printing this tree vertically will be:
 [4]-[2]-[1,5,6]-[3,8]-[7]-[9]
 */
 
-class PrintVerticalOrder {
+class BinaryTreePrintVerticalOrder {
 
   static class Node {
     int data;
