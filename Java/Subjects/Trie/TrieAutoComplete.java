@@ -3,10 +3,10 @@ import java.lang.*;
 import java.io.*;
 
 /*
-Trie Example
+Trie Auto Complete Example.
 */
 
-class AutoComplete {
+class TrieAutoComplete {
 
   public static class Node {
     String prefix; // abc
@@ -30,14 +30,11 @@ class AutoComplete {
   private static void insertWord(String s) {
       Node n = trie;
       for (int i=0; i<s.length(); i++) {
-        if(!n.children.containsKey(s.charAt(i))) {
-          n.children.put(s.charAt(i),
-          new Node(s.substring(0,i+1)));
+        if (!n.children.containsKey(s.charAt(i))) {
+          n.children.put(s.charAt(i), new Node(s.substring(0,i+1)));
         }
         n = n.children.get(s.charAt(i));
-        if (i == s.length()-1) {
-          n.isWord = true;
-        }
+        if (i == s.length()-1) n.isWord = true;
       }
   }
 
@@ -54,6 +51,7 @@ class AutoComplete {
     findAllChildWords(curr, results);
     return results;
   }
+  
   private static void findAllChildWords(Node n, List<String> results) {
     if (n.isWord) results.add(n.prefix);
     for (Character c : n.children.keySet()) {
@@ -66,6 +64,5 @@ class AutoComplete {
     autocomplete(dict);
     List <String> result = getWordsForPrefix("a");
     System.out.println(result.toString());
-
   }
 }

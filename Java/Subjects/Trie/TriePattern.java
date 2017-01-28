@@ -12,7 +12,7 @@ should return doable and double. Given the pattern ??, it would return a
 list of all two-letter words in English.
 */
 
-class Pattern {
+class TriePattern {
   public static class Node {
     String prefix;
     HashMap<Character, Node> children;
@@ -35,7 +35,7 @@ class Pattern {
   public static void insertWord(Node root, String word) {
     Node curr = root;
     for (int i=0; i<word.length(); i++) {
-      if(!curr.children.containsKey(word.charAt(i))) {
+      if (!curr.children.containsKey(word.charAt(i))) {
         curr.children.put(word.charAt(i), new Node(word.substring(0,i+1)));
       }
       curr = curr.children.get(word.charAt(i));

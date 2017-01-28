@@ -8,7 +8,7 @@ returns a pointer to the root of a new trie that contains all the words
 present in both tries.
 */
 
-class MergeTwoTriesInPlace {
+class TrieMergeTwoTriesInPlace {
 
   public static class Node {
     String prefix;
@@ -57,6 +57,7 @@ class MergeTwoTriesInPlace {
       printTrie(root.children.get(c));
     }
   }
+
   public static void main (String[] args) {
     String[] dictA = {"abc", "ab", "cba", "cbb"};
     Node trieA = createTrie(dictA);
@@ -68,6 +69,5 @@ class MergeTwoTriesInPlace {
 
     Node trieC = mergeTries(trieA, trieB);
     printTrie(trieC);
-
   }
 }
