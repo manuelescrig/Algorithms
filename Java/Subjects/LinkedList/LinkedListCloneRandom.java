@@ -7,7 +7,7 @@ Given a LinkedList where each node has two pointers. Write a function to
 clone the LinkedList.
 */
 
-class CloneRandom {
+class LinkedListCloneRandom {
 
   public static class Node {
     int value;

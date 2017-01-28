@@ -13,7 +13,7 @@ data structures.
 |___|    |___|    |___|
 */
 
-class ReverseStack {
+class StackReverse {
 
   public static <T> void reverseStack(Stack<T> stack) {
       if (stack.isEmpty()) return;
@@ -21,7 +21,7 @@ class ReverseStack {
       // Remove bottom element from stack
       T bottom = popBottom(stack);
 
-      // Reverse everything else in stack
+      // Recurse reversing everything else in stack
       reverseStack(stack);
 
       // Add original bottom element to top of stack

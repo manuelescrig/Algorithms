@@ -29,7 +29,7 @@ l =
 r =
 */
 
-class Split {
+class LinkedListSplit {
 
   static class Node {
     int data;
@@ -40,7 +40,7 @@ class Split {
       this.next = null;
     }
   }
-  
+
   public static void print(Node n) {
     Node curr = n;
     while (curr != null) {

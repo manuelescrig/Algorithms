@@ -4,7 +4,7 @@ import java.io.*;
 
 /*
 */
-class HasCycle {
+class LinkedListHasCycle {
   public static class Node {
     int value;
     Node next;

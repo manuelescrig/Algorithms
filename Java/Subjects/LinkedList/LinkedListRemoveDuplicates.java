@@ -8,7 +8,7 @@ duplicates.
 dedup( 1->2->3->2->1 )  => 1->2->3
 */
 
-class RemoveDuplicates {
+class LinkedListRemoveDuplicates {
 
   static class Node {
     int data;

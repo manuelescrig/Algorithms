@@ -3,11 +3,10 @@ import java.lang.*;
 import java.io.*;
 
 /*
-Delete a node from a singly-linked list ↴ ,
-given only a variable pointing to that node.
+Find out if a Linked list is a palindrome.
 */
 
-class IsPalindrome {
+class LinkedListIsPalindrome {
 
   static class Node {
     int data;
@@ -28,6 +27,7 @@ class IsPalindrome {
     System.out.println("null");
   }
 
+  // Reverse recursive
   public static Node reverseRecursive(Node n) {
     if (n == null) return null;
     Node head = null;
@@ -45,6 +45,7 @@ class IsPalindrome {
     return reverse(next, curr);
   }
 
+  // Reverse iterative
   public static Node reverseIterative(Node n) {
     Node curr = n;
     Node prev = null;
@@ -69,13 +70,13 @@ class IsPalindrome {
 
     return true;
   }
+
   /*
    LinkedList => 1  2  3  4  5  6
    Slow                   ^
    Fast                         ^
    Stack => [1,2,3,]
   */
-
   public static boolean palindrome(Node n) {
 
     Stack<Node> stack = new Stack<Node>();
@@ -117,7 +118,6 @@ class IsPalindrome {
     print(reversed);
 
     System.out.println(isPalindrome(a1,reversed));
-
     Node b1 = new Node(1);
     Node b2 = new Node(2);
     Node b3 = new Node(3);
@@ -135,6 +135,5 @@ class IsPalindrome {
     System.out.println("---");
     print(a2);
     System.out.println(palindrome(a2));
-
   }
 }

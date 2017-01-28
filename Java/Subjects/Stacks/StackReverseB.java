@@ -15,7 +15,7 @@ temp = 2
 a =
 */
 
-class ReverseStackB {
+class StackReverseB {
 
   public static Stack<Integer> reverse(Stack<Integer> stack) {
     if (stack.isEmpty()) return stack;

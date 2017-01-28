@@ -11,7 +11,7 @@ Eg. 1->2->3
 1
 */
 
-class PrintReverse {
+class LinkedListPrintReverse {
   private static class Node {
     int value;
     Node next;

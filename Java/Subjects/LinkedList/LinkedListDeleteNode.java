@@ -3,9 +3,11 @@ import java.lang.*;
 import java.io.*;
 
 /*
+Delete a node from a singly-linked list,
+given only a variable pointing to that node.
 */
 
-class Reverse {
+class LinkedListDeleteNode {
 
   static class Node {
     int data;
@@ -15,6 +17,7 @@ class Reverse {
       this.data = data;
       this.next = null;
     }
+
   }
 
   public static void print(Node n) {
@@ -33,23 +36,6 @@ class Reverse {
     n.next = next.next;
   }
 
-  public static Node reverse(Node n) {
-
-    Node curr = n;
-    Node prev = null;
-    Node next = null;
-
-    while (curr != null) {
-      next = curr.next;
-      curr.next =  prev;
-      prev = curr;
-      curr = next;
-    }
-
-    return prev;
-  }
-
-
   public static void main (String[] args) {
     Node n1 = new Node(1);
     Node n2 = new Node(2);
@@ -67,7 +53,5 @@ class Reverse {
     print(n1);
     delete(n4);
     print(n1);
-    Node temp = reverse(n1);
-    print(temp);
   }
 }
