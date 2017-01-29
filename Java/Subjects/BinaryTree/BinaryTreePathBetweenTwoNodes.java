@@ -3,8 +3,7 @@ import java.lang.*;
 import java.io.*;
 
 /*
-Question A. Print the path from root to a particular node given as input in a
-binary tree in the sequential order.
+Find Path Between Two Nodes in a Binary Tree
 (need not be BST or balanced).
 
           5
@@ -13,20 +12,11 @@ binary tree in the sequential order.
     /  \    /  \
    1   3   6   8
 
-path(3) = 5,2,3
-path(7) = 5,7
-
-Question B. Find the longest path from root to leaf in a tree
-          5
-       /    \
-      2      7
-    /  \    /  \
-   1   3   6   8
-      / \
-     9  10
+path(3,6) = 3,2,5,7,6
+path(8,6) = 8,7,6
 */
 
-class PathFromRootToNode {
+class BinaryTreePathBetweenTwoNodes {
 
   static class Node {
     int data;
@@ -37,32 +27,46 @@ class PathFromRootToNode {
     }
   }
   // Iterative with BFS and HashMap
-  public static List<Node> path(Node tree, Node n) {
+  public static List<Node> path(Node root, Node a, Node b) {
     HashMap<Node,Node> map = new HashMap<Node,Node>();
     Queue<Node> queue = new LinkedList<Node>();
-    queue.add(tree);
-    map.put(tree,null);
+    queue.add(root);
+    map.put(root,null);
+
     while (!queue.isEmpty()) {
       Node temp = queue.remove();
-      if (temp != n) {
-        if (temp.left != null) {
-          map.put(temp.left,temp);
-          queue.add(temp.left);
-        }
-        if (temp.right != null) {
-          map.put(temp.right,temp);
-          queue.add(temp.right);
-        }
+      if (temp.left != null) {
+        map.put(temp.left,temp);
+        queue.add(temp.left);
+      }
+      if (temp.right != null) {
+        map.put(temp.right,temp);
+        queue.add(temp.right);
       }
     }
 
     List<Node> result = new ArrayList<Node>();
-    result.add(n);
-    Node next = map.get(n);
-    while (next != null) {
-      result.add(0,next);
-      next = map.get(next);
+    int index = 0;
+    result.add(b);
+    result.add(index,a);
+
+    Node tempA = a;
+    Node tempB = b;
+
+    while (tempA != null && tempB != null) {
+      index++;
+      tempA = map.get(tempA);
+      tempB = map.get(tempB);
+
+      if (tempA == tempB) {
+        result.add(index, tempA);
+        break;
+      } else {
+        result.add(index,tempB);
+        result.add(index,tempA);
+      }
     }
+
     return result;
   }
 
@@ -112,17 +116,9 @@ class PathFromRootToNode {
     n7.right = n8;
     levelOrder(n5);
     System.out.println("--");
-    List<Node> result = path(n5, n8);
+    List<Node> result = path(n5, n8, n6);
     for (Node n : result) {
       System.out.print(n.data + " ");
     }
-    System.out.println("");
-    ArrayList<Node> path = new ArrayList<Node>();
-    printPath(path, n5,n8);
-    for (Node n : path) {
-      System.out.print(n.data + " ");
-    }
-    System.out.println("");
-
   }
 }

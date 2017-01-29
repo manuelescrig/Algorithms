@@ -5,7 +5,7 @@ import java.io.*;
 /*
 */
 
-class PrintBFS {
+class BSTPrintBFS {
 
   static class Node {
     int data;

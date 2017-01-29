@@ -5,7 +5,7 @@ import java.io.*;
 /*
 */
 
-class LowestCommonAncestor {
+class BinaryTreeLowestCommonAncestor {
 
   static class Node {
     int data;

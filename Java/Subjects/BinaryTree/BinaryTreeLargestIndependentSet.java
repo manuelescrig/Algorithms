@@ -35,7 +35,7 @@ Result = a1,a3,a5;
  Result = a2,a3;
 */
 
-class BinaryTreeLIS {
+class BinaryTreeBinaryTreeLIS {
 
   static class Node {
     int data;

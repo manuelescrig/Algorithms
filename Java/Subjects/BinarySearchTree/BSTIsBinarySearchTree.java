@@ -24,7 +24,7 @@ true
 false
 */
 
-class IsBinarySearchTree {
+class BSTIsBinarySearchTree {
 
   static class Node {
     int data;

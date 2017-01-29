@@ -6,7 +6,7 @@ import java.io.*;
 Given a directed graph, find the shortest path between two nodes.
 */
 
-class ShortestPath {
+class GraphShortestPath {
 
   private static class Node {
     List<Node> next;

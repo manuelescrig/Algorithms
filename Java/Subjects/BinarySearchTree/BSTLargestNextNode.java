@@ -20,7 +20,7 @@ largestNext(3) = 5;
 */
 
 
-class LargestNextNode {
+class BSTLargestNextNode {
 
   static class Node {
     int data;

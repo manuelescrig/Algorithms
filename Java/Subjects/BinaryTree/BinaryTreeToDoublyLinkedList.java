@@ -15,7 +15,7 @@ from left to right only modifiying the existing pointers.
    <- 4 <-> 2 <-> 5 <-> 1 <-> 6 <-> 3 <-> 7 ->
 */
 
-class TreeToDoublyLinkedList {
+class BinaryTreeToDoublyLinkedList {
 
   static class Node {
     int data;

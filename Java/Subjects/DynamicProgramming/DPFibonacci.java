@@ -13,7 +13,7 @@ N = 0  => 0
 n + n-1 + n-2 + n-3  ... n-n => O(n!)
 */
 
-class Fibonacci {
+class DPFibonacci {
 
   public static int fibonnaci(int n) {
     if (n==0) return 0;

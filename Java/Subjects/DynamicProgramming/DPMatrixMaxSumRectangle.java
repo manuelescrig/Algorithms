@@ -21,7 +21,7 @@ is the max number no larger than k (k = 2).
 // https://www.youtube.com/watch?v=yCQN096CwWM
 */
 
-class MatrixMaxSumRectangle {
+class DPMatrixMaxSumRectangle {
 
   public static void print(int[][] array) {
     for (int row=0; row<array.length; row++) {

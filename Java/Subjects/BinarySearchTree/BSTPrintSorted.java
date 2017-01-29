@@ -8,7 +8,7 @@ given a pointer to the root of a binary search tree,
 prints out the elements in that tree in sorted order.
 */
 
-class PrintSorted {
+class BSTPrintSorted {
 
   static class Node {
     int data;

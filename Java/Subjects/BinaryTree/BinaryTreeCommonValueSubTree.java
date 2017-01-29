@@ -10,7 +10,7 @@ where every node has the same value. Given a binary tree, return a pointer
 to the largest common value subtree in that tree.
 */
 
-class CommonValueSubTree {
+class BinaryTreeCommonValueSubTree {
 
   static class Node {
     int data;

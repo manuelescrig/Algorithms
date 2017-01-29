@@ -6,7 +6,7 @@ import java.io.*;
 Find Root Of node.
 */
 
-class FindRootOf {
+class BSTFindRootOf {
 
   static class Node {
     int data;

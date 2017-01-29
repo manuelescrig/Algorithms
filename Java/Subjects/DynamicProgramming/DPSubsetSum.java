@@ -12,7 +12,7 @@ int[] A = { 3, 2, 7, 1}, S = 6
 Output: True, subset is (3, 2, 1}
 */
 
-public class SubsetSum {
+public class DPSubsetSum {
 
   // Dynamic Programing version
   public static boolean subSetDP(int[] A, int sum) {

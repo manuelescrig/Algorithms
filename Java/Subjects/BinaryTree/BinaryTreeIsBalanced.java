@@ -3,25 +3,24 @@ import java.lang.*;
 import java.io.*;
 
 /*
-Write a function to check if a Binary Tree is balanced.
+Write a function that takes as input a pointer to the root of a binary tree,
+then returns whether it's a valid binary search tree.
 
-               4
+               1
             /     \
-          2         6
+          2         3
         /   \    /    \
-      1     3   5      7
-                        \
-                          8
-                          \
-                          9
-
-          1
+      4     5   6      7
+      \        /  \  /   \
+      8      9   10  11  12
+            /
+          13
 
 */
 
 class BinaryTreeIsBalanced {
 
-  public static class Node {
+  static class Node {
     int data;
     Node left;
     Node right;
@@ -30,19 +29,34 @@ class BinaryTreeIsBalanced {
     }
   }
 
+  // public static boolean isBalanced(Node root) {
+  //   if (balancedHeight(root) > -1 ) return true;
+  //   else return false;
+  // }
+  //
+  // private static int balancedHeight(Node n) {
+  //   if (n == null) return 0;
+  //   int left = balancedHeight(n.left);
+  //   int right = balancedHeight(n.right);
+  //
+  //   if (left == -1 || right == -1) return -1;
+  //   if (Math.abs(left - right) > 1) return -1;
+  //   return Math.max(left+1, right+1);
+  // }
+
   public static boolean isBalanced(Node root) {
     if (traverse(root) == -1) return false;
     else return true;
   }
 
-  public static int traverse(Node node) {
-    if (node == null) return 0;
+  private static int traverse(Node n) {
+    if (n == null) return 0;
 
-    int left = traverse(node.left);
-    int right = traverse(node.right);
+    int left = traverse(n.left);
+    int right = traverse(n.right);
 
     if (left == -1 || right == -1) return -1;
-    if (Math.abs(left - right) > 1 ) return -1;
+    if (Math.abs(left-right) > 1) return -1;
     if (left > right) return left+1;
     else return right+1;
   }
@@ -67,6 +81,5 @@ class BinaryTreeIsBalanced {
     n7.right = n8;
     n8.right = n9;
     System.out.println(isBalanced(n4));
-    System.out.println("-");
   }
 }

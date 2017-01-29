@@ -5,7 +5,7 @@ import java.io.*;
 /*
 */
 
-class PrintDFS {
+class BSTPrintDFS {
 
   static class Node {
     int data;
@@ -23,7 +23,7 @@ class PrintDFS {
   public static void printPreOrder(Node n) {
     Stack<Node> stack = new Stack<Node>();
     stack.push(n);
-    
+
     while (!stack.isEmpty()) {
       Node temp = stack.pop();
       if (temp == null) continue;

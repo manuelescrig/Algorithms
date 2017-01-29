@@ -9,7 +9,7 @@ Eg. {0x12, 0x34, 0x56, 0x78} represents 0x12345678
 Eg. mod({0x03, 0xED}, 10) = 0x03ED = 1005 % 10 = 10
 */
 
-class FindMod {
+class BitFindMod {
 
   public static int mod(byte[] a, int b) {
     int m = 0;
