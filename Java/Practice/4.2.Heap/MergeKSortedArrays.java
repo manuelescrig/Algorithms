@@ -40,7 +40,7 @@ class MergeKSortedArrays {
     int m=0;
     int result[] = new int[total];
 
-    // while heap is not empty
+    // While heap is not empty
     while (!queue.isEmpty()) {
       ArrayContainer ac = queue.poll();
       result[m++]=ac.arr[ac.index];
