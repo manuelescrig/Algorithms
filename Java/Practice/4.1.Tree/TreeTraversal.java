@@ -14,7 +14,7 @@ Binary Tree Traversal: Preorder, Inorder, Postorder, Level Order, Vertical Order
                8
 */
 
-class Traversal {
+class TreeTraversal {
 
   public static class Node {
     int value;
