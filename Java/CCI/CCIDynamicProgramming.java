@@ -128,8 +128,7 @@ class CCIDynamicProgramming {
   /*
   8.4 Power Set: Write a method to return all subsets of a set.
   */
-  public static ArrayList<ArrayList<Integer>> subSets(ArrayList<ArrayList<Integer>> sets,
-  int[] a, int n, int m) {
+  public static ArrayList<ArrayList<Integer>> subSets(ArrayList<ArrayList<Integer>> sets, int[] a, int n, int m) {
     if (n <= 0) {
       sets.add(new ArrayList<Integer>());
       return sets;

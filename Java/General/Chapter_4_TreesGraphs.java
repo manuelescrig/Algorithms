@@ -244,9 +244,7 @@ class Chapter_4_TreesGraphs {
     /* Both non-empty, compare them recursively
     Note that in recursive calls, we pass left
     of one tree and right of other tree */
-    return a.data == b.data
-    && areMirror(a.left, b.right)
-    && areMirror(a.right, b.left);
+    return a.data == b.data && areMirror(a.left, b.right) && areMirror(a.right, b.left);
   }
 
   /*
