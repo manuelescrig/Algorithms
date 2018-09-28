@@ -29,7 +29,7 @@ func birthday(s: [Int], d: Int, m: Int) -> Int {
 
 
 let s = [1, 2, 1, 3, 2]
-print(birthday(s: s, d: 3, m: 2))
+// print(birthday(s: s, d: 3, m: 2))
 // Result = 2
 
 //let s = [1, 1, 1, 1, 1, 1]

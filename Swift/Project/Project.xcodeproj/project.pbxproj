@@ -14,9 +14,9 @@
 		F6792392215DEEDA00C437B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6792390215DEEDA00C437B7 /* LaunchScreen.storyboard */; };
 		F679239D215DEEE900C437B7 /* Minimum Swaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679239B215DEEE900C437B7 /* Minimum Swaps.swift */; };
 		F679239E215DEEE900C437B7 /* 2D Array - DS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679239C215DEEE900C437B7 /* 2D Array - DS.swift */; };
-		F67923A5215DEEEF00C437B7 /* Birthday Cake Candles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A1215DEEEF00C437B7 /* Birthday Cake Candles.swift */; };
 		F67923A6215DEEEF00C437B7 /* Birthday Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A2215DEEEF00C437B7 /* Birthday Bar.swift */; };
 		F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A3215DEEEF00C437B7 /* Grading Students.swift */; };
+		F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		F6792393215DEEDA00C437B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F679239B215DEEE900C437B7 /* Minimum Swaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Minimum Swaps.swift"; sourceTree = "<group>"; };
 		F679239C215DEEE900C437B7 /* 2D Array - DS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2D Array - DS.swift"; sourceTree = "<group>"; };
-		F67923A1215DEEEF00C437B7 /* Birthday Cake Candles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Birthday Cake Candles.swift"; sourceTree = "<group>"; };
 		F67923A2215DEEEF00C437B7 /* Birthday Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Birthday Bar.swift"; sourceTree = "<group>"; };
 		F67923A3215DEEEF00C437B7 /* Grading Students.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Grading Students.swift"; sourceTree = "<group>"; };
+		F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Birthday Cake Candles.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +107,9 @@
 		F67923A0215DEEEF00C437B7 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				F67923A1215DEEEF00C437B7 /* Birthday Cake Candles.swift */,
 				F67923A2215DEEEF00C437B7 /* Birthday Bar.swift */,
 				F67923A3215DEEEF00C437B7 /* Grading Students.swift */,
+				F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 				F6792388215DEEDA00C437B7 /* AppDelegate.swift in Sources */,
 				F679239E215DEEE900C437B7 /* 2D Array - DS.swift in Sources */,
 				F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */,
-				F67923A5215DEEEF00C437B7 /* Birthday Cake Candles.swift in Sources */,
+				F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */,
 				F67923A6215DEEEF00C437B7 /* Birthday Bar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

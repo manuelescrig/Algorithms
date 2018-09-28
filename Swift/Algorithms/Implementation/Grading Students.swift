@@ -21,4 +21,4 @@ func gradingStudents(grades: [Int]) -> [Int] {
 }
 
 let grates = [73, 67, 38, 33]
-print(gradingStudents(grades: grates))
+// print(gradingStudents(grades: grates))
