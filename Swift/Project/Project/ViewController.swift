@@ -16,11 +16,12 @@ class ViewController: UIViewController {
 //        let result = birthdayCakeCandles(ar: [3,2,1,3])
 //        print("birthdayCakeCandles = \(result)")
 
-        let result = migratoryBirds(arr: [1,2,3,4,5,4,3,2,1,3,4])
-        print("migratoryBirds = \(result)")
+//        let result = migratoryBirds(arr: [1,2,3,4,5,4,3,2,1,3,4])
+//        print("migratoryBirds = \(result)")
+
+        let result = dayOfProgrammer(year: 1800)
+        print("dayOfProgrammer = \(result)")
 
     }
-
-
 }
 
