@@ -17,6 +17,7 @@
 		F67923A6215DEEEF00C437B7 /* Birthday Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A2215DEEEF00C437B7 /* Birthday Bar.swift */; };
 		F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A3215DEEEF00C437B7 /* Grading Students.swift */; };
 		F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */; };
+		F67923AB215DF75100C437B7 /* Migratory Birds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923AA215DF75100C437B7 /* Migratory Birds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F67923A2215DEEEF00C437B7 /* Birthday Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Birthday Bar.swift"; sourceTree = "<group>"; };
 		F67923A3215DEEEF00C437B7 /* Grading Students.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Grading Students.swift"; sourceTree = "<group>"; };
 		F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Birthday Cake Candles.swift"; sourceTree = "<group>"; };
+		F67923AA215DF75100C437B7 /* Migratory Birds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Migratory Birds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				F67923A2215DEEEF00C437B7 /* Birthday Bar.swift */,
 				F67923A3215DEEEF00C437B7 /* Grading Students.swift */,
 				F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */,
+				F67923AA215DF75100C437B7 /* Migratory Birds.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				F679238A215DEEDA00C437B7 /* ViewController.swift in Sources */,
 				F679239D215DEEE900C437B7 /* Minimum Swaps.swift in Sources */,
+				F67923AB215DF75100C437B7 /* Migratory Birds.swift in Sources */,
 				F6792388215DEEDA00C437B7 /* AppDelegate.swift in Sources */,
 				F679239E215DEEE900C437B7 /* 2D Array - DS.swift in Sources */,
 				F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */,

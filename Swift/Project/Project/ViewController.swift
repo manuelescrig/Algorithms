@@ -13,8 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let result = birthdayCakeCandles(ar: [3,2,1,3])
-        print("birthdayCakeCandles = \(result)")
+//        let result = birthdayCakeCandles(ar: [3,2,1,3])
+//        print("birthdayCakeCandles = \(result)")
+
+        let result = migratoryBirds(arr: [1,2,3,4,5,4,3,2,1,3,4])
+        print("migratoryBirds = \(result)")
+
     }
 
 
