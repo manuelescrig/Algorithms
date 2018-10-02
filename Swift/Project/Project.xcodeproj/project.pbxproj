@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F882161E297005AD42E /* Days of the programmer.swift */; };
+		F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */; };
 		F6792388215DEEDA00C437B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6792387215DEEDA00C437B7 /* AppDelegate.swift */; };
 		F679238A215DEEDA00C437B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6792389215DEEDA00C437B7 /* ViewController.swift */; };
 		F679238D215DEEDA00C437B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F679238B215DEEDA00C437B7 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		F6493F882161E297005AD42E /* Days of the programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Days of the programmer.swift"; sourceTree = "<group>"; };
+		F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drawing Book Flip Pages.swift"; sourceTree = "<group>"; };
 		F6792384215DEEDA00C437B7 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6792387215DEEDA00C437B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6792389215DEEDA00C437B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				F6493F882161E297005AD42E /* Days of the programmer.swift */,
+				F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */,
 				F67923A2215DEEEF00C437B7 /* Birthday Bar.swift */,
 				F67923A3215DEEEF00C437B7 /* Grading Students.swift */,
 				F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */,
@@ -206,6 +209,7 @@
 				F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */,
 				F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */,
 				F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */,
+				F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */,
 				F67923A6215DEEEF00C437B7 /* Birthday Bar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
