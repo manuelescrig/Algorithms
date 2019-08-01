@@ -1,0 +1,47 @@
+# TreeHeight
+
+http://www.blog.rdabrowicz.pl/2012/06/codility-sprawdzanie-wiedzy.html
+
+public class Tree
+{
+    public int x;
+    public Tree l;
+    public Tree r;
+};
+ 
+public int TreeHeight(Tree node)
+{
+    if (node == null)
+        return 0;
+    if (node.l == null && node.r == null)
+        return 0;
+    return 1 + Math.Max(treeHeight(node.l), treeHeight(node.r));
+}
+
+
+
+--------
+http://stackoverflow.com/questions/5017566/max-function-c-tree-height
+
+
+------
+http://cboard.cprogramming.com/c-programming/52995-depth-binary-tree.html
+
+int maxDepth(TreeNode *tree)
+{
+    if (tree == NULL)
+        return 0;
+    else {
+                               // compute the depth of each subtree
+        int lDepth = maxDepth(tree->left);
+        int rDepth = maxDepth(tree->right);
+ 
+                   // use the larger one
+        if(lDepth > rDepth)
+            return (lDepth + 1);
+        else
+            return (rDepth + 1);
+    }
+}
+
+-----

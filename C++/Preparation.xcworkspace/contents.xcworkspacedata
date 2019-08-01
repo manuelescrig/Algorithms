@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:NewTest/NewTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Exercise4/Exercise4.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Exercise3/Exercise3.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Exercise2/Exercise2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Exercise1/Exercise1.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Test/Test.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Codility/Codility.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Numbers/Numbers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Sorting/Sorting.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BinaryTree/BinaryTree.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LinkedList/LinkedList.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HashTable/HashTable.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Arrays/Arrays.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BiggestPalindrome/BiggestPalindrome.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Palindromes/Palindromes.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Strings/Strings.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Search/Search.xcodeproj">
+   </FileRef>
+</Workspace>

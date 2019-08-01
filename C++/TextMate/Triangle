@@ -1,0 +1,12 @@
+# Triangle
+
+http://snipplr.com/view/43036/
+http://codility.com/contests/ep2010/results/appPZ2RXZ-B87
+
+def triangle ( A ):
+    # write your code here
+    A.sort()
+    for i in range(len(A) - 2):
+        if A[i] + A[i+1] > A[i+2]:
+            return 1
+    return 0
