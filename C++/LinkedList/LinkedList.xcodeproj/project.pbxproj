@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F64B515A16A1C21B008BADF3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F64B515916A1C21B008BADF3 /* main.cpp */; };
+		F64B515C16A1C21B008BADF3 /* LinkedList.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F64B515B16A1C21B008BADF3 /* LinkedList.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F64B515316A1C21B008BADF3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F64B515C16A1C21B008BADF3 /* LinkedList.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F64B515516A1C21B008BADF3 /* LinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64B515916A1C21B008BADF3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F64B515B16A1C21B008BADF3 /* LinkedList.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LinkedList.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F64B515216A1C21B008BADF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F64B514A16A1C21B008BADF3 = {
+			isa = PBXGroup;
+			children = (
+				F64B515816A1C21B008BADF3 /* LinkedList */,
+				F64B515616A1C21B008BADF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F64B515616A1C21B008BADF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F64B515516A1C21B008BADF3 /* LinkedList */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F64B515816A1C21B008BADF3 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				F64B515916A1C21B008BADF3 /* main.cpp */,
+				F64B515B16A1C21B008BADF3 /* LinkedList.1 */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F64B515416A1C21B008BADF3 /* LinkedList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64B515F16A1C21B008BADF3 /* Build configuration list for PBXNativeTarget "LinkedList" */;
+			buildPhases = (
+				F64B515116A1C21B008BADF3 /* Sources */,
+				F64B515216A1C21B008BADF3 /* Frameworks */,
+				F64B515316A1C21B008BADF3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedList;
+			productName = LinkedList;
+			productReference = F64B515516A1C21B008BADF3 /* LinkedList */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F64B514C16A1C21B008BADF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F64B514F16A1C21B008BADF3 /* Build configuration list for PBXProject "LinkedList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F64B514A16A1C21B008BADF3;
+			productRefGroup = F64B515616A1C21B008BADF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F64B515416A1C21B008BADF3 /* LinkedList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F64B515116A1C21B008BADF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64B515A16A1C21B008BADF3 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F64B515D16A1C21B008BADF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F64B515E16A1C21B008BADF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F64B516016A1C21B008BADF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F64B516116A1C21B008BADF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F64B514F16A1C21B008BADF3 /* Build configuration list for PBXProject "LinkedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64B515D16A1C21B008BADF3 /* Debug */,
+				F64B515E16A1C21B008BADF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64B515F16A1C21B008BADF3 /* Build configuration list for PBXNativeTarget "LinkedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64B516016A1C21B008BADF3 /* Debug */,
+				F64B516116A1C21B008BADF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F64B514C16A1C21B008BADF3 /* Project object */;
+}
