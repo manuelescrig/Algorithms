@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6E95C5316A2C4F500FFED23 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E95C5216A2C4F500FFED23 /* main.cpp */; };
+		F6E95C5516A2C4F500FFED23 /* Codility.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6E95C5416A2C4F500FFED23 /* Codility.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6E95C4C16A2C4F500FFED23 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F6E95C5516A2C4F500FFED23 /* Codility.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F6E95C4E16A2C4F500FFED23 /* Codility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Codility; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E95C5216A2C4F500FFED23 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F6E95C5416A2C4F500FFED23 /* Codility.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Codility.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6E95C4B16A2C4F500FFED23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6E95C4316A2C4F500FFED23 = {
+			isa = PBXGroup;
+			children = (
+				F6E95C5116A2C4F500FFED23 /* Codility */,
+				F6E95C4F16A2C4F500FFED23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6E95C4F16A2C4F500FFED23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E95C4E16A2C4F500FFED23 /* Codility */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E95C5116A2C4F500FFED23 /* Codility */ = {
+			isa = PBXGroup;
+			children = (
+				F6E95C5216A2C4F500FFED23 /* main.cpp */,
+				F6E95C5416A2C4F500FFED23 /* Codility.1 */,
+			);
+			path = Codility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6E95C4D16A2C4F500FFED23 /* Codility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E95C5816A2C4F500FFED23 /* Build configuration list for PBXNativeTarget "Codility" */;
+			buildPhases = (
+				F6E95C4A16A2C4F500FFED23 /* Sources */,
+				F6E95C4B16A2C4F500FFED23 /* Frameworks */,
+				F6E95C4C16A2C4F500FFED23 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Codility;
+			productName = Codility;
+			productReference = F6E95C4E16A2C4F500FFED23 /* Codility */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6E95C4516A2C4F500FFED23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F6E95C4816A2C4F500FFED23 /* Build configuration list for PBXProject "Codility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6E95C4316A2C4F500FFED23;
+			productRefGroup = F6E95C4F16A2C4F500FFED23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6E95C4D16A2C4F500FFED23 /* Codility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6E95C4A16A2C4F500FFED23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E95C5316A2C4F500FFED23 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F6E95C5616A2C4F500FFED23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6E95C5716A2C4F500FFED23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6E95C5916A2C4F500FFED23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6E95C5A16A2C4F500FFED23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6E95C4816A2C4F500FFED23 /* Build configuration list for PBXProject "Codility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E95C5616A2C4F500FFED23 /* Debug */,
+				F6E95C5716A2C4F500FFED23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E95C5816A2C4F500FFED23 /* Build configuration list for PBXNativeTarget "Codility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E95C5916A2C4F500FFED23 /* Debug */,
+				F6E95C5A16A2C4F500FFED23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6E95C4516A2C4F500FFED23 /* Project object */;
+}
