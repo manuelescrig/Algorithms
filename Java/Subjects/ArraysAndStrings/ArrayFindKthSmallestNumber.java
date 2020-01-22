@@ -1,6 +1,4 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 /*
 Given an array and a number k where k is smaller than size of array,

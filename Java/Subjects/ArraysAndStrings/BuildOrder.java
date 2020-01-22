@@ -1,5 +1,4 @@
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 
 /*
@@ -38,7 +37,7 @@ class BuildOrder {
                             List<Integer> results) {
 
     if (tempMarks.contains(process)) {
-      thrown new runtimeExpection();
+      throw new runtimeExpection();
     }
     if (!permMarks.contains(process)) {
       tempMarks.add(process);
