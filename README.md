@@ -1,5 +1,5 @@
 # Algorithms
 
-This is a collection of coding interviewing problems in Java.
+This is a collection of coding interviewing problems.
 
 Manuel - 
