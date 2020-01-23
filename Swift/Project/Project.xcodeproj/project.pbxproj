@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F882161E297005AD42E /* Days of the programmer.swift */; };
 		F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */; };
+		F65F231F23D9601E007B0B1B /* Find All Duplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F231E23D9601E007B0B1B /* Find All Duplicates.swift */; };
+		F65F232123D96212007B0B1B /* Longest Consecutive Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F232023D96212007B0B1B /* Longest Consecutive Array.swift */; };
+		F65F232323D962EF007B0B1B /* Max Consecutives Ones.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F232223D962EF007B0B1B /* Max Consecutives Ones.swift */; };
+		F65F232523D965D5007B0B1B /* Contiguous Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F232423D965D5007B0B1B /* Contiguous Array.swift */; };
 		F6792388215DEEDA00C437B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6792387215DEEDA00C437B7 /* AppDelegate.swift */; };
 		F679238A215DEEDA00C437B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6792389215DEEDA00C437B7 /* ViewController.swift */; };
 		F679238D215DEEDA00C437B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F679238B215DEEDA00C437B7 /* Main.storyboard */; };
@@ -20,11 +24,16 @@
 		F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A3215DEEEF00C437B7 /* Grading Students.swift */; };
 		F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */; };
 		F67923AB215DF75100C437B7 /* Migratory Birds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923AA215DF75100C437B7 /* Migratory Birds.swift */; };
+		F6B9036323D9922600D32100 /* Find Median Two Sorted Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6493F882161E297005AD42E /* Days of the programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Days of the programmer.swift"; sourceTree = "<group>"; };
 		F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drawing Book Flip Pages.swift"; sourceTree = "<group>"; };
+		F65F231E23D9601E007B0B1B /* Find All Duplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Find All Duplicates.swift"; sourceTree = "<group>"; };
+		F65F232023D96212007B0B1B /* Longest Consecutive Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Longest Consecutive Array.swift"; sourceTree = "<group>"; };
+		F65F232223D962EF007B0B1B /* Max Consecutives Ones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Max Consecutives Ones.swift"; sourceTree = "<group>"; };
+		F65F232423D965D5007B0B1B /* Contiguous Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contiguous Array.swift"; sourceTree = "<group>"; };
 		F6792384215DEEDA00C437B7 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6792387215DEEDA00C437B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6792389215DEEDA00C437B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +47,7 @@
 		F67923A3215DEEEF00C437B7 /* Grading Students.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Grading Students.swift"; sourceTree = "<group>"; };
 		F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Birthday Cake Candles.swift"; sourceTree = "<group>"; };
 		F67923AA215DF75100C437B7 /* Migratory Birds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Migratory Birds.swift"; sourceTree = "<group>"; };
+		F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Find Median Two Sorted Arrays.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,11 @@
 			children = (
 				F679239B215DEEE900C437B7 /* Minimum Swaps.swift */,
 				F679239C215DEEE900C437B7 /* 2D Array - DS.swift */,
+				F65F231E23D9601E007B0B1B /* Find All Duplicates.swift */,
+				F65F232023D96212007B0B1B /* Longest Consecutive Array.swift */,
+				F65F232423D965D5007B0B1B /* Contiguous Array.swift */,
+				F65F232223D962EF007B0B1B /* Max Consecutives Ones.swift */,
+				F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -206,7 +221,12 @@
 				F67923AB215DF75100C437B7 /* Migratory Birds.swift in Sources */,
 				F6792388215DEEDA00C437B7 /* AppDelegate.swift in Sources */,
 				F679239E215DEEE900C437B7 /* 2D Array - DS.swift in Sources */,
+				F65F232123D96212007B0B1B /* Longest Consecutive Array.swift in Sources */,
+				F65F232523D965D5007B0B1B /* Contiguous Array.swift in Sources */,
+				F6B9036323D9922600D32100 /* Find Median Two Sorted Arrays.swift in Sources */,
 				F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */,
+				F65F231F23D9601E007B0B1B /* Find All Duplicates.swift in Sources */,
+				F65F232323D962EF007B0B1B /* Max Consecutives Ones.swift in Sources */,
 				F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */,
 				F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */,
 				F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */,
