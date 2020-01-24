@@ -24,6 +24,10 @@
 		F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A3215DEEEF00C437B7 /* Grading Students.swift */; };
 		F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */; };
 		F67923AB215DF75100C437B7 /* Migratory Birds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67923AA215DF75100C437B7 /* Migratory Birds.swift */; };
+		F6A43F6D23DAD784008FC583 /* Top K Frequent Integers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A43F6C23DAD784008FC583 /* Top K Frequent Integers.swift */; };
+		F6A43F6F23DAE287008FC583 /* Top K Frequent Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A43F6E23DAE287008FC583 /* Top K Frequent Words.swift */; };
+		F6A43F7123DAF308008FC583 /* Most Common Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A43F7023DAF308008FC583 /* Most Common Word.swift */; };
+		F6A43F7323DAFC96008FC583 /* Is Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A43F7223DAFC96008FC583 /* Is Anagram.swift */; };
 		F6B9036323D9922600D32100 /* Find Median Two Sorted Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		F67923A3215DEEEF00C437B7 /* Grading Students.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Grading Students.swift"; sourceTree = "<group>"; };
 		F67923A8215DF17700C437B7 /* Birthday Cake Candles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Birthday Cake Candles.swift"; sourceTree = "<group>"; };
 		F67923AA215DF75100C437B7 /* Migratory Birds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Migratory Birds.swift"; sourceTree = "<group>"; };
+		F6A43F6C23DAD784008FC583 /* Top K Frequent Integers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Top K Frequent Integers.swift"; sourceTree = "<group>"; };
+		F6A43F6E23DAE287008FC583 /* Top K Frequent Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Top K Frequent Words.swift"; sourceTree = "<group>"; };
+		F6A43F7023DAF308008FC583 /* Most Common Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Most Common Word.swift"; sourceTree = "<group>"; };
+		F6A43F7223DAFC96008FC583 /* Is Anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Is Anagram.swift"; sourceTree = "<group>"; };
 		F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Find Median Two Sorted Arrays.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +119,10 @@
 				F65F232423D965D5007B0B1B /* Contiguous Array.swift */,
 				F65F232223D962EF007B0B1B /* Max Consecutives Ones.swift */,
 				F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */,
+				F6A43F6C23DAD784008FC583 /* Top K Frequent Integers.swift */,
+				F6A43F6E23DAE287008FC583 /* Top K Frequent Words.swift */,
+				F6A43F7023DAF308008FC583 /* Most Common Word.swift */,
+				F6A43F7223DAFC96008FC583 /* Is Anagram.swift */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -119,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				F67923A0215DEEEF00C437B7 /* Implementation */,
-				F67923A4215DEEEF00C437B7 /* String */,
 			);
 			name = Algorithms;
 			path = ../Algorithms;
@@ -136,13 +147,6 @@
 				F67923AA215DF75100C437B7 /* Migratory Birds.swift */,
 			);
 			path = Implementation;
-			sourceTree = "<group>";
-		};
-		F67923A4215DEEEF00C437B7 /* String */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,16 +221,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F679238A215DEEDA00C437B7 /* ViewController.swift in Sources */,
+				F6A43F6D23DAD784008FC583 /* Top K Frequent Integers.swift in Sources */,
 				F679239D215DEEE900C437B7 /* Minimum Swaps.swift in Sources */,
 				F67923AB215DF75100C437B7 /* Migratory Birds.swift in Sources */,
 				F6792388215DEEDA00C437B7 /* AppDelegate.swift in Sources */,
 				F679239E215DEEE900C437B7 /* 2D Array - DS.swift in Sources */,
 				F65F232123D96212007B0B1B /* Longest Consecutive Array.swift in Sources */,
 				F65F232523D965D5007B0B1B /* Contiguous Array.swift in Sources */,
+				F6A43F6F23DAE287008FC583 /* Top K Frequent Words.swift in Sources */,
 				F6B9036323D9922600D32100 /* Find Median Two Sorted Arrays.swift in Sources */,
 				F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */,
 				F65F231F23D9601E007B0B1B /* Find All Duplicates.swift in Sources */,
 				F65F232323D962EF007B0B1B /* Max Consecutives Ones.swift in Sources */,
+				F6A43F7123DAF308008FC583 /* Most Common Word.swift in Sources */,
+				F6A43F7323DAFC96008FC583 /* Is Anagram.swift in Sources */,
 				F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */,
 				F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */,
 				F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */,

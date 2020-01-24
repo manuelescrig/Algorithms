@@ -38,11 +38,28 @@ class ViewController: UIViewController {
 //        let array = [100, 4, 200, 1, 3, 2]
 //        let result = longestConsecutive(array)
         
-        let array1 = [1, 2]
-        let array2 = [3, 4]
+//        let array1 = [1, 2]
+//        let array2 = [3, 4]
+//        let result = findMedianSortedArrays(array1, array2)
+//        print("findMedianSortedArrays = \(result)")
         
-        let result = findMedianSortedArrays(array1, array2)
-        print("findMedianSortedArrays = \(result)")
+//        let array = [1,1,1,2,2,3]
+//        let result = topKFrequent(array, 2)
+//        print("topKFrequent = \(result)")
+
+//        let array = ["i", "love", "leetcode", "i", "love", "coding"]
+//        let result = topKFrequent(array, 2)
+//        print("topKFrequent = \(result)")
+
+//        let paragraph = "Bob. hIt, baLl"
+//        let  banned = ["bob", "hit"]
+//        let result = mostCommonWord(paragraph, banned)
+//        print("mostCommonWord = \(result)")
+  
+        let s = "anagram"
+        let t = "nagaram"
+        let result = isAnagram(s, t)
+        print("mostCommonWord = \(result)")
     }
 }
 
