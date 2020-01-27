@@ -29,6 +29,11 @@
 		F6A43F7123DAF308008FC583 /* Most Common Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A43F7023DAF308008FC583 /* Most Common Word.swift */; };
 		F6A43F7323DAFC96008FC583 /* Is Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A43F7223DAFC96008FC583 /* Is Anagram.swift */; };
 		F6B9036323D9922600D32100 /* Find Median Two Sorted Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */; };
+		F6CD68C623DEDA5400A96FB4 /* BarrierArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD68C523DEDA5400A96FB4 /* BarrierArray.swift */; };
+		F6CD68C823DEDA6A00A96FB4 /* ThreadSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD68C723DEDA6900A96FB4 /* ThreadSafeArray.swift */; };
+		F6CD68CA23DEDC9B00A96FB4 /* SyncArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD68C923DEDC9B00A96FB4 /* SyncArray.swift */; };
+		F6CD68CC23DEDD3B00A96FB4 /* ThreadSafeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD68CB23DEDD3B00A96FB4 /* ThreadSafeDictionary.swift */; };
+		F6CD68CE23DEF0BB00A96FB4 /* Missing Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD68CD23DEF0BB00A96FB4 /* Missing Numbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		F6A43F7023DAF308008FC583 /* Most Common Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Most Common Word.swift"; sourceTree = "<group>"; };
 		F6A43F7223DAFC96008FC583 /* Is Anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Is Anagram.swift"; sourceTree = "<group>"; };
 		F6B9036223D9922600D32100 /* Find Median Two Sorted Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Find Median Two Sorted Arrays.swift"; sourceTree = "<group>"; };
+		F6CD68C523DEDA5400A96FB4 /* BarrierArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierArray.swift; sourceTree = "<group>"; };
+		F6CD68C723DEDA6900A96FB4 /* ThreadSafeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeArray.swift; sourceTree = "<group>"; };
+		F6CD68C923DEDC9B00A96FB4 /* SyncArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncArray.swift; sourceTree = "<group>"; };
+		F6CD68CB23DEDD3B00A96FB4 /* ThreadSafeDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeDictionary.swift; sourceTree = "<group>"; };
+		F6CD68CD23DEF0BB00A96FB4 /* Missing Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Missing Numbers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 		F679237B215DEEDA00C437B7 = {
 			isa = PBXGroup;
 			children = (
+				F6CD68C223DED90000A96FB4 /* Thread Safe */,
 				F679239F215DEEEF00C437B7 /* Algorithms */,
 				F6792399215DEEE900C437B7 /* Data Structures */,
 				F6792386215DEEDA00C437B7 /* Project */,
@@ -123,6 +134,7 @@
 				F6A43F6E23DAE287008FC583 /* Top K Frequent Words.swift */,
 				F6A43F7023DAF308008FC583 /* Most Common Word.swift */,
 				F6A43F7223DAFC96008FC583 /* Is Anagram.swift */,
+				F6CD68CD23DEF0BB00A96FB4 /* Missing Numbers.swift */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -147,6 +159,17 @@
 				F67923AA215DF75100C437B7 /* Migratory Birds.swift */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F6CD68C223DED90000A96FB4 /* Thread Safe */ = {
+			isa = PBXGroup;
+			children = (
+				F6CD68C523DEDA5400A96FB4 /* BarrierArray.swift */,
+				F6CD68C723DEDA6900A96FB4 /* ThreadSafeArray.swift */,
+				F6CD68C923DEDC9B00A96FB4 /* SyncArray.swift */,
+				F6CD68CB23DEDD3B00A96FB4 /* ThreadSafeDictionary.swift */,
+			);
+			path = "Thread Safe";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,18 +249,23 @@
 				F67923AB215DF75100C437B7 /* Migratory Birds.swift in Sources */,
 				F6792388215DEEDA00C437B7 /* AppDelegate.swift in Sources */,
 				F679239E215DEEE900C437B7 /* 2D Array - DS.swift in Sources */,
+				F6CD68C623DEDA5400A96FB4 /* BarrierArray.swift in Sources */,
 				F65F232123D96212007B0B1B /* Longest Consecutive Array.swift in Sources */,
 				F65F232523D965D5007B0B1B /* Contiguous Array.swift in Sources */,
 				F6A43F6F23DAE287008FC583 /* Top K Frequent Words.swift in Sources */,
+				F6CD68CA23DEDC9B00A96FB4 /* SyncArray.swift in Sources */,
 				F6B9036323D9922600D32100 /* Find Median Two Sorted Arrays.swift in Sources */,
 				F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */,
 				F65F231F23D9601E007B0B1B /* Find All Duplicates.swift in Sources */,
+				F6CD68C823DEDA6A00A96FB4 /* ThreadSafeArray.swift in Sources */,
 				F65F232323D962EF007B0B1B /* Max Consecutives Ones.swift in Sources */,
 				F6A43F7123DAF308008FC583 /* Most Common Word.swift in Sources */,
 				F6A43F7323DAFC96008FC583 /* Is Anagram.swift in Sources */,
 				F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */,
+				F6CD68CC23DEDD3B00A96FB4 /* ThreadSafeDictionary.swift in Sources */,
 				F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */,
 				F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */,
+				F6CD68CE23DEF0BB00A96FB4 /* Missing Numbers.swift in Sources */,
 				F67923A6215DEEEF00C437B7 /* Birthday Bar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

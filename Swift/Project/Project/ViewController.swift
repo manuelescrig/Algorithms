@@ -56,10 +56,52 @@ class ViewController: UIViewController {
 //        let result = mostCommonWord(paragraph, banned)
 //        print("mostCommonWord = \(result)")
   
-        let s = "anagram"
-        let t = "nagaram"
-        let result = isAnagram(s, t)
-        print("mostCommonWord = \(result)")
+//        let s = "anagram"
+//        let t = "nagaram"
+//        let result = isAnagram(s, t)
+//        print("mostCommonWord = \(result)")
+        
+//        macICanBuy(budget: 100, closure: { mac in
+//            print("I can afford a \(mac)")
+//        })
+//
+//        // Generates 10 threads
+//        DispatchQueue.concurrentPerform(iterations: 10) { [weak self] index in
+//            self?.array.append(newElement: index)
+//            print("self?.array.count \(self?.array.count)")
+//        }
+        
+        let numbers = [2,3,1,6]
+        let result = missingTwoNumbers(numbers: numbers)
+        print("missingOneNumber = \(result)")
     }
+    
+    // MARK: - @escaping closures
+    
+//    func macICanBuy(budget: Int, closure: (String) -> Void) {
+//        print("checking budget...")
+//
+//        closure("Mcdonalds' Big Mac")
+//
+//        print("macICanBuy finished execution")
+//    }
+//
+//    func macICanBuy(budget: Int, closure: @escaping (String) -> Void) {
+//        print("checking budget...")
+//
+//        // execute the closure 2 seconds after current time
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+//            closure("Mcdonalds' Big Mac")
+//        })
+//
+//        print("macICanBuy finished execution")
+//    }
+    
+    // MARK: - Thread safe
+    
+//    var array = SerialQueueArray<Int>()
+//    var array = BarrierArray<Int>()
+//    var array = SynchronizedArray<Int>()
+
 }
 
