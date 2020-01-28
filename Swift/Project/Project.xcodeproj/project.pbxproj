@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6202C4A23E0322C00E92538 /* Three Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6202C4923E0322C00E92538 /* Three Sum.swift */; };
 		F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F882161E297005AD42E /* Days of the programmer.swift */; };
 		F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */; };
 		F65F231F23D9601E007B0B1B /* Find All Duplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F231E23D9601E007B0B1B /* Find All Duplicates.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6202C4923E0322C00E92538 /* Three Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Three Sum.swift"; sourceTree = "<group>"; };
 		F6493F882161E297005AD42E /* Days of the programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Days of the programmer.swift"; sourceTree = "<group>"; };
 		F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drawing Book Flip Pages.swift"; sourceTree = "<group>"; };
 		F65F231E23D9601E007B0B1B /* Find All Duplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Find All Duplicates.swift"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				F6A43F7023DAF308008FC583 /* Most Common Word.swift */,
 				F6A43F7223DAFC96008FC583 /* Is Anagram.swift */,
 				F6CD68CD23DEF0BB00A96FB4 /* Missing Numbers.swift */,
+				F6202C4923E0322C00E92538 /* Three Sum.swift */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */,
 				F6CD68CC23DEDD3B00A96FB4 /* ThreadSafeDictionary.swift in Sources */,
 				F67923A9215DF17700C437B7 /* Birthday Cake Candles.swift in Sources */,
+				F6202C4A23E0322C00E92538 /* Three Sum.swift in Sources */,
 				F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */,
 				F6CD68CE23DEF0BB00A96FB4 /* Missing Numbers.swift in Sources */,
 				F67923A6215DEEEF00C437B7 /* Birthday Bar.swift in Sources */,

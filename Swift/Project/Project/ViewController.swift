@@ -71,9 +71,13 @@ class ViewController: UIViewController {
 //            print("self?.array.count \(self?.array.count)")
 //        }
         
-        let numbers = [2,3,1,6]
-        let result = missingTwoNumbers(numbers: numbers)
-        print("missingOneNumber = \(result)")
+//        let numbers = [2,3,1,6]
+//        let result = missingTwoNumbers(numbers: numbers)
+//        print("missingOneNumber = \(result)")
+        
+        let numbers = [-1, 0, 1, 2, -1, -4]
+        let result = threeSum(numbers)
+        print("threeSum = \(result)")
     }
     
     // MARK: - @escaping closures
