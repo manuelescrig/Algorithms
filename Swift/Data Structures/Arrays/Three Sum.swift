@@ -28,7 +28,6 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 func threeSum(_ nums: [Int]) -> [[Int]] {
     var result = [[Int]]()
     let n = nums.sorted()
-    result.last
     
     for start in 0..<n.count-3 {
         if start == 0 || (start > 0 && n[start] > n[start-1]) {
