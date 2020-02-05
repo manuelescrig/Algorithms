@@ -75,9 +75,33 @@ class ViewController: UIViewController {
 //        let result = missingTwoNumbers(numbers: numbers)
 //        print("missingOneNumber = \(result)")
         
-        let numbers = [-1, 0, 1, 2, -1, -4]
-        let result = threeSum(numbers)
-        print("threeSum = \(result)")
+//        let numbers = [-1, 0, 1, 2, -1, -4]
+//        let result = threeSum(numbers)
+//        print("threeSum = \(result)")
+        
+//        testing()
+        
+//        [0] 0
+//        [1] 1
+//        var nums1 = [1,2,3,0,0,0]
+//        let nums2 = [2,5,6]
+        
+//        var nums1 = [2,0]
+//        let nums2 = [1]
+//        merge(&nums1, 1, nums2, 1)
+//        print("Result \(nums1)")
+        
+//        print("Is Palindrome \(isPalindrome(3121121213))")
+        
+        let nodeA = ListNode(1)
+        let nodeB = ListNode(2)
+        let nodeC = ListNode(2)
+        let nodeD = ListNode(1)
+        nodeA.next = nodeB
+        nodeB.next = nodeC
+        nodeC.next = nodeD
+
+        print("Is Palindrome \(isPalindrome(nodeA))")
     }
     
     // MARK: - @escaping closures
