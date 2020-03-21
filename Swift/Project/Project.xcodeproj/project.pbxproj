@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F6202C4A23E0322C00E92538 /* Three Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6202C4923E0322C00E92538 /* Three Sum.swift */; };
+		F62BB0E123EB021D00C81E5D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62BB0E023EB021D00C81E5D /* LinkedList.swift */; };
 		F6493F892161E297005AD42E /* Days of the programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F882161E297005AD42E /* Days of the programmer.swift */; };
 		F6493F8B2162164F005AD42E /* Drawing Book Flip Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */; };
 		F64F893423E1948100F8DC1D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F893323E1948100F8DC1D /* Test.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		F6202C4923E0322C00E92538 /* Three Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Three Sum.swift"; sourceTree = "<group>"; };
+		F62BB0E023EB021D00C81E5D /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		F6493F882161E297005AD42E /* Days of the programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Days of the programmer.swift"; sourceTree = "<group>"; };
 		F6493F8A2162164F005AD42E /* Drawing Book Flip Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drawing Book Flip Pages.swift"; sourceTree = "<group>"; };
 		F64F893323E1948100F8DC1D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F62BB0DF23EB020700C81E5D /* Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				F62BB0E023EB021D00C81E5D /* LinkedList.swift */,
+			);
+			path = "Linked List";
+			sourceTree = "<group>";
+		};
 		F64F893223E1946F00F8DC1D /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		F6792399215DEEE900C437B7 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				F62BB0DF23EB020700C81E5D /* Linked List */,
 				F679239A215DEEE900C437B7 /* Arrays */,
 			);
 			name = "Data Structures";
@@ -276,6 +287,7 @@
 				F6A43F6F23DAE287008FC583 /* Top K Frequent Words.swift in Sources */,
 				F6CD68CA23DEDC9B00A96FB4 /* SyncArray.swift in Sources */,
 				F6B9036323D9922600D32100 /* Find Median Two Sorted Arrays.swift in Sources */,
+				F62BB0E123EB021D00C81E5D /* LinkedList.swift in Sources */,
 				F67923A7215DEEEF00C437B7 /* Grading Students.swift in Sources */,
 				F65F231F23D9601E007B0B1B /* Find All Duplicates.swift in Sources */,
 				F6CD68C823DEDA6A00A96FB4 /* ThreadSafeArray.swift in Sources */,

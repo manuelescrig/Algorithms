@@ -93,15 +93,61 @@ class ViewController: UIViewController {
         
 //        print("Is Palindrome \(isPalindrome(3121121213))")
         
-        let nodeA = ListNode(1)
-        let nodeB = ListNode(2)
-        let nodeC = ListNode(2)
-        let nodeD = ListNode(1)
-        nodeA.next = nodeB
-        nodeB.next = nodeC
-        nodeC.next = nodeD
-
-        print("Is Palindrome \(isPalindrome(nodeA))")
+//        let nodeA = ListNode(1)
+//        let nodeB = ListNode(2)
+//        let nodeC = ListNode(2)
+//        let nodeD = ListNode(1)
+//        nodeA.next = nodeB
+//        nodeB.next = nodeC
+//        nodeC.next = nodeD
+//
+//        print("Is Palindrome \(isPalindrome(nodeA))")
+//        let result = isPalindrome("A man, a plan, a canal: Panama")
+//        print("result \(result)")
+    
+//        let result = validPalindrome("abca")
+//        print("result \(result)")
+        
+//        Input: 1->2->4, 1->3->4
+        
+//        let node1a = ListNode(1)
+//        let node1b = ListNode(2)
+//        let node1c = ListNode(4)
+//        node1a.next = node1b
+//        node1b.next = node1c
+//
+//        let node2a = ListNode(1)
+//        let node2b = ListNode(3)
+//        let node2c = ListNode(4)
+//        node2a.next = node2b
+//        node2b.next = node2c
+//
+//        print(node1a)
+//        print(node2a)
+//
+//        if let result: ListNode = mergeTwoLists(node1a, node2a) {
+//            print(result)
+        //        }
+        
+        
+        let node1a = ListNode(1)
+        let node1b = ListNode(2)
+        let node1c = ListNode(3)
+        let node1d = ListNode(4)
+        let node1e = ListNode(5)
+        let node1f = ListNode(6)
+        node1a.next = node1b
+        node1b.next = node1c
+        node1c.next = node1d
+        node1d.next = node1e
+//        node1e.next = node1f
+        print(node1a)
+        
+        if let result: ListNode = middleNode(node1a) {
+            print(node1a)
+            print(result)
+        }
+        
     }
     
     // MARK: - @escaping closures
